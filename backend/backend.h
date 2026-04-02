@@ -13,6 +13,12 @@ class DroneState {
     int battery;
     STATES state;
   public:
+    // DroneState()
+    // : id(generateUID()),
+    //   pos{0.0, 0.0, 0.0},
+    //   battery(100),
+    //   state(OFF) {}
+
     DroneState(const Drone& d) 
     : id(d.getId()),
       pos(d.getPosition()),
@@ -32,12 +38,13 @@ class DroneList {
     
     void addDrone(const Drone& d) {
       DroneState dc(d);
-      drones[dc.getId()] = dc;
+      drones.emplace(dc.getId(), dc);
     }
 
     int update(const DroneState& state) {
       if (drones.find(state.getId()) == drones.end()) return -1;
-      drones[state.getId()] = state;
+      auto ditr = drones.find(state.getId());
+      ditr->second = state;
       return 0;
     }
 };

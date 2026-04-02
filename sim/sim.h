@@ -1,6 +1,8 @@
 #ifndef SIM_H
 #define SIM_H
 
+int generateUID(void);
+
 enum STATES {
   OFF,
   START,
@@ -34,7 +36,5 @@ class Drone {
     STATES getState() const { return state; }
 
 };
-
-int generateUID(void);
 
 #endif
