@@ -10,26 +10,27 @@ enum STATES {
 };
 
 struct Position {
-  int lat;
-  int lng;
+  double lat;
+  double lng;
+  double alt;
 };
 
 class Drone {
   private:
     int id;
     Position pos;
-    float battery;
+    int battery;
     STATES state;
   public:
     Drone()
     : id(generateUID()),
-      pos{0,0},
-      battery(100.0f),
+      pos{0.0, 0.0, 0.0},
+      battery(100),
       state(OFF) {}
 
     int getId() const { return id; }
     Position getPosition() const { return pos; }
-    float getBattery() const { return battery; }
+    int getBattery() const { return battery; }
     STATES getState() const { return state; }
 
 };
