@@ -28,7 +28,7 @@ class DroneList {
   public:
     DroneList() {};
     
-    int size() const {return drones.size();};
+    size_t size() const {return drones.size();};
     
     void addDrone(const Drone& d) {
       DroneState dc(d);
