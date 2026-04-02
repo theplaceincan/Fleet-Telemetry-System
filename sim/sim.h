@@ -34,6 +34,6 @@ class Drone {
 
 };
 
-int generateUID();
+int generateUID(void);
 
 #endif
