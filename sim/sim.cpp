@@ -17,7 +17,7 @@ int main() {
   DroneList fleet;
   vector<Drone> droneRegistry;
 
-  cout << "Simulation Begin" << endl;
+  cout << "Simulation Starting Up..." << endl;
 
   cout << "Adding drones..." << endl;
   for (int i = 0; i < NUM_OF_DRONES; i++) {
@@ -28,4 +28,22 @@ int main() {
   }
   cout << "Added drones completed." << endl;
   cout << "Fleet size: " << fleet.size() << endl;
+
+  cout << "\nSimulation Begin\n" << endl;
+
+  for (int tick = 0; tick < 100; tick++) {
+    for (auto& d : droneRegistry) {
+      d.movePos(0.001, 0.0015, 0.0);
+      d.drainBattery(1);
+
+      if (tick == 0) d.setState(TAKEOFF);
+      else if (tick < 30) d.setState(CRUISE);
+      else if (tick < 40) d.setState(APPROACH);
+      else if (tick < 50) d.setState(DELIVERY);
+      else d.setState(RETURNING);
+
+      DroneState snapshot(d);
+      fleet.update(snapshot);
+    }
+  }
 }

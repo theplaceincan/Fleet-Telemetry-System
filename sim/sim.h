@@ -38,6 +38,16 @@ class Drone {
     int getBattery() const { return battery; }
     STATES getState() const { return state; }
 
+    void movePos(double dLat, double dLng, double dAlt) {
+      pos.lat += dLat;
+      pos.lng += dLng;
+      pos.alt += dAlt;
+    }
+    void drainBattery(int amount) {
+      battery-amount;
+      if (battery < 0) battery = 0;
+    };
+    void setState(STATES newState) {state = newState;};
 };
 
 #endif
