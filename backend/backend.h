@@ -56,6 +56,12 @@ class DroneList {
       ditr->second = state;
       return 0;
     }
+
+    const DroneState* getDroneState(int id) {
+      auto ditr = drones.find(id);
+      if (ditr == drones.end()) return nullptr;
+      return &ditr->second;
+    }
 };
 
 #endif
