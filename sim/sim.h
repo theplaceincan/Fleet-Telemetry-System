@@ -6,7 +6,10 @@ int generateUID(void);
 enum STATES {
   OFF,
   START,
-  FLY,
+  TAKEOFF,
+  CRUISE,
+  APPROACH,
+  DELIVERY,
   RETURNING,
   LANDED
 };

@@ -3,8 +3,7 @@
 
 #include <unordered_map>
 #include "sim.h"
-
-using std::unordered_map;
+#include <cstddef>
 
 class DroneState {
   private:
@@ -24,13 +23,22 @@ class DroneState {
       pos(d.getPosition()),
       battery(d.getBattery()),
       state(d.getState()) {}
+
+    DroneState(int id, Position pos, int battery, STATES state)
+    : id(id),
+      pos(pos),
+      battery(battery),
+      state(state) {}
     
     int getId() const {return id;};
+    Position getPosition() const {return pos;};
+    int getBattery() const {return battery;};
+    STATES getState() const {return state;};
 };
 
 class DroneList {
   private:
-    unordered_map<int, DroneState> drones;
+    std::unordered_map<int, DroneState> drones;
   public:
     DroneList() {};
     
@@ -38,12 +46,13 @@ class DroneList {
     
     void addDrone(const Drone& d) {
       DroneState dc(d);
-      drones.emplace(dc.getId(), dc);
+      auto res = drones.emplace(dc.getId(), dc);
+      if (!res.second) std::cout << "Line 47 in /backend.h, addDrone(): Drone already exists\n";
     }
 
     int update(const DroneState& state) {
-      if (drones.find(state.getId()) == drones.end()) return -1;
       auto ditr = drones.find(state.getId());
+      if (ditr == drones.end()) return -1;
       ditr->second = state;
       return 0;
     }
