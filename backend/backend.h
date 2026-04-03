@@ -4,6 +4,7 @@
 #include <unordered_map>
 #include "sim.h"
 #include <cstddef>
+#include <chrono>
 
 class DroneState {
   private:
@@ -11,6 +12,7 @@ class DroneState {
     Position pos;
     int battery;
     STATES state;
+    std::chrono::steady_clock::time_point last_updated;
   public:
     // DroneState()
     // : id(generateUID()),

@@ -1,0 +1,4 @@
+Dependencies installed:
+
+FastAPI
+Uvicorn
