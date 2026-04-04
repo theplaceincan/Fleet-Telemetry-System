@@ -1,11 +1,18 @@
 #include <chrono>
+#include <cmath>
 #include <iostream>
+#include <random>
 #include <thread>
 #include <vector>
 
 #include "backend/backend.h"
 #include "common/id.h"
+#include "data/locations.h"
 #include "drone.h"
+std::random_device rd;
+std::mt19937 gen(rd());
+std::uniform_int_distribution<int> baseDist(0, BASES.size() - 1);
+std::uniform_int_distribution<int> destDist(0, DESTINATIONS.size() - 1);
 
 // Base
 const double BASE_LAT = 36.1699;
@@ -18,6 +25,12 @@ using std::vector;
 
 const int NUM_OF_DRONES = 1000;
 
+double distance2D(double lat1, double lng1, double lat2, double lng2) {
+  double dLat = lat2 - lat1;
+  double dLng = lng2 - lng1;
+  return std::sqrt(dLat * dLat + dLng * dLng);
+}
+
 int main() {
   DroneList fleet;
   vector<Drone> droneRegistry;
@@ -26,16 +39,20 @@ int main() {
   cout << "Simulation Starting Up..." << endl;
   cout << "Adding drones..." << endl;
   for (int i = 0; i < NUM_OF_DRONES; i++) {
-    Drone d;
 
+    Location chosenBase = BASES[baseDist(gen)];
+    Location chosenDestination = DESTINATIONS[destDist(gen)];
     double latOffset = (i % 20) * 0.00005;
     double lngOffset = (i / 20) * 0.00005;
-    d.setPosition(BASE_LAT + latOffset, BASE_LNG + lngOffset, BASE_ALT);
+
+    Drone d(chosenBase, chosenDestination, latOffset, lngOffset);
 
     droneRegistry.push_back(d);
     fleet.addDrone(d);
 
-    cout << "[New Drone Registered] Drone ID:" << d.getId() << endl;
+    cout << "[New Drone Registered] Drone ID: " << d.getId()
+         << " | Base: " << chosenBase.addr
+         << " | Destination: " << chosenDestination.addr << endl;
   }
   cout << "Added drones completed." << endl;
   cout << "Fleet size: " << fleet.size() << endl;
@@ -43,30 +60,33 @@ int main() {
 
   int tick = 0;
   while (true) {
-    int i = 0;
     for (auto& d : droneRegistry) {
-      if (tick == 0) {
-        d.setState(TAKEOFF);
-        d.movePos(0.0, 0.0, 10.0);
-      } else if (tick < 30) {
-        d.setState(CRUISE);
-        double dLat = 0.0005 + (i % 10) * 0.00002;
-        double dLng = 0.0007 + (i % 15) * 0.00002;
-        d.movePos(dLat, dLng, 0.0);
-      } else if (tick < 40) {
-        d.setState(APPROACH);
-        d.movePos(0.0002, 0.0002, -2.0);
-      } else if (tick < 50) {
-        d.setState(DELIVERY);
+      Position p = d.getPosition();
+      Location dest = d.getDestination();
+
+      double dLat = dest.lat - p.lat;
+      double dLng = dest.lng - p.lng;
+      double dist = std::sqrt(dLat * dLat + dLng * dLng);
+
+      if (dist < 0.0001) {
+        d.setState(LANDED);
       } else {
-        d.setState(RETURNING);
-        d.movePos(-0.0004, -0.0005, 0.0);
+        if (p.alt < 30.0) {
+          d.setState(TAKEOFF);
+          d.movePos(0.0, 0.0, 5.0);
+        } else {
+          d.setState(CRUISE);
+
+          double step = 0.0003;
+          double unitLat = dLat / dist;
+          double unitLng = dLng / dist;
+
+          d.movePos(unitLat * step, unitLng * step, 0.0);
+        }
       }
 
       d.drainBattery(1);
-      DroneState snapshot(d);
-      fleet.update(snapshot);
-      i++;
+      fleet.update(DroneState(d));
     }
     int result = fleet.writeTelemetry("backend/telemetry.json");
     if (result != 0) cout << "Failed to write telemetry\n";

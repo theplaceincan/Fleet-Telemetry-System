@@ -31,6 +31,8 @@ class DroneState {
   Position pos;
   int battery;
   STATES state;
+  Location destination;
+  Location base;
   std::chrono::system_clock::time_point last_updated;
 
  public:
@@ -39,19 +41,26 @@ class DroneState {
         pos(d.getPosition()),
         battery(d.getBattery()),
         state(d.getState()),
+        base(d.getBase()),
+        destination(d.getDestination()),
         last_updated(std::chrono::system_clock::now()) {}
 
-  DroneState(int id, Position pos, int battery, STATES state)
+  DroneState(int id, Position pos, int battery, STATES state, Location base, Location destination)
       : id(id),
         pos(pos),
         battery(battery),
         state(state),
+        base(base),
+        destination(destination),
         last_updated(std::chrono::system_clock::now()) {}
 
   int getId() const { return id; };
   Position getPosition() const { return pos; };
   int getBattery() const { return battery; };
   STATES getState() const { return state; };
+  Location getDestination() const { return destination; };
+  Location getBase() const { return base; };
+
   long long getLastUpdated() const {
     return std::chrono::duration_cast<std::chrono::milliseconds>(
         last_updated.time_since_epoch()
@@ -114,7 +123,17 @@ class DroneList {
       file << "      },\n";
       file << "      \"battery\": " << drone.getBattery() << ",\n";
       file << "      \"state\": \"" << stateToString(drone.getState()) << "\",\n";
-      file << "      \"timestamp\": " << drone.getLastUpdated() << "\n";
+      file << "      \"timestamp\": " << drone.getLastUpdated() << ",\n";
+      file << "      \"base\": {\n";
+      file << "        \"lat\": " << drone.getBase().lat << ",\n";
+      file << "        \"lng\": " << drone.getBase().lng << ",\n";
+      file << "        \"address\": \"" << drone.getBase().addr << "\"\n";
+      file << "      },\n";
+      file << "      \"destination\": {\n";
+      file << "        \"lat\": " << drone.getDestination().lat << ",\n";
+      file << "        \"lng\": " << drone.getDestination().lng << ",\n";
+      file << "        \"address\": \"" << drone.getDestination().addr << "\"\n";
+      file << "      }\n";
       file << "    }";
 
       first = false;
