@@ -1,0 +1,5 @@
+telemetry.json:
+
+{
+  "drones": []
+}

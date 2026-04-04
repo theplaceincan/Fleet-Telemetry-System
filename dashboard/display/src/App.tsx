@@ -19,30 +19,37 @@ export default function App() {
   const [error, setError] = useState("");
 
   useEffect(() => {
-    const interval = setInterval(() => {
+    const fetchData = () => {
       fetch("http://127.0.0.1:8000/telemetry")
-      .then((response) => response.json())
+      .then((response) => {
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        return response.json();
+      })
       .then((data) => {
         setDrones(data.drones);
         setLoading(false);
+        setError("");
       })
       .catch((err) => {
         console.error("Failed to fetch telemetry:", err);
         setError("Failed to fetch telemetry");
         setLoading(false);
       });
-    }, 1000)
+    }
     
+    fetchData();
+    const interval = setInterval(fetchData, 1000)
     return () => clearInterval(interval);
   }, []);
 
+  
   if (loading) { return <p>Loading telemetry...</p>; }
-  if (error) { return <p>{error}</p>; }
+  // if (error) { return <p>{error}</p>; }
 
   return (
     <div>
       <h1>Fleet Telemetry Dashboard</h1>
-
+      {error && <p style={{ color: "red" }}>{error}</p>}
       {drones.map((drone) => (
         <div key={drone.id}>
           <h2>Drone #{drone.id}</h2>
