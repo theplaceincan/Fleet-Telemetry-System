@@ -32,6 +32,11 @@ class Drone {
       if (battery < 0) battery = 0;
     };
     void setState(STATES newState) {state = newState;};
+    void setPosition(double lat, double lng, double alt) {
+      pos.lat = lat;
+      pos.lng = lng;
+      pos.alt = alt;
+    }
 };
 
 #endif

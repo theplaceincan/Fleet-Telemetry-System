@@ -19,6 +19,10 @@ def root():
 def get_telemetry():
     with open("../backend/telemetry.json", "r") as file:
       return json.load(file)
+    
+    
+    
+    
     # // test data 
     # "drones" : [
     #   { 
