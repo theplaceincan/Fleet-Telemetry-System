@@ -13,6 +13,7 @@ std::random_device rd;
 std::mt19937 gen(rd());
 std::uniform_int_distribution<int> baseDist(0, BASES.size() - 1);
 std::uniform_int_distribution<int> destDist(0, DESTINATIONS.size() - 1);
+std::uniform_real_distribution<double> offsetDist(-0.0003, 0.0003);
 
 // Base
 const double BASE_LAT = 36.1699;
@@ -39,11 +40,11 @@ int main() {
   cout << "Simulation Starting Up..." << endl;
   cout << "Adding drones..." << endl;
   for (int i = 0; i < NUM_OF_DRONES; i++) {
-
     Location chosenBase = BASES[baseDist(gen)];
     Location chosenDestination = DESTINATIONS[destDist(gen)];
-    double latOffset = (i % 20) * 0.00005;
-    double lngOffset = (i / 20) * 0.00005;
+
+    double latOffset = offsetDist(gen);
+    double lngOffset = offsetDist(gen);
 
     Drone d(chosenBase, chosenDestination, latOffset, lngOffset);
 
@@ -62,25 +63,46 @@ int main() {
   while (true) {
     for (auto& d : droneRegistry) {
       Position p = d.getPosition();
-      Location dest = d.getDestination();
+      STATES state = d.getState();
 
-      double dLat = dest.lat - p.lat;
-      double dLng = dest.lng - p.lng;
-      double dist = std::sqrt(dLat * dLat + dLng * dLng);
-
-      if (dist < 0.0001) {
-        d.setState(LANDED);
-      } else {
+      if (state == OFF) {
+        d.setState(TAKEOFF);
+      } else if (state == TAKEOFF) {
         if (p.alt < 30.0) {
-          d.setState(TAKEOFF);
           d.movePos(0.0, 0.0, 5.0);
         } else {
           d.setState(CRUISE);
+        }
+      } else if (state == CRUISE) {
+        Location dest = d.getDestination();
 
-          double step = 0.0003;
-          double unitLat = dLat / dist;
-          double unitLng = dLng / dist;
+        double dLat = dest.lat - p.lat;
+        double dLng = dest.lng - p.lng;
+        double distance = std::sqrt(dLat * dLat + dLng * dLng);
 
+        if (distance < 0.0001) {
+          d.setState(DELIVERY);
+        } else {
+          double step = 0.0002 + (d.getId() % 10) * 0.00002;
+          double unitLat = dLat / distance;
+          double unitLng = dLng / distance;
+          d.movePos(unitLat * step, unitLng * step, 0.0);
+        }
+      } else if (state == DELIVERY) {
+        d.setState(RETURNING);
+      } else if (state == RETURNING) {
+        Location base = d.getBase();
+
+        double dLat = base.lat - p.lat;
+        double dLng = base.lng - p.lng;
+        double distance = std::sqrt(dLat * dLat + dLng * dLng);
+
+        if (distance < 0.0001) {
+          d.setState(LANDED);
+        } else {
+          double step = 0.0002 + (d.getId() % 10) * 0.00002;
+          double unitLat = dLat / distance;
+          double unitLng = dLng / distance;
           d.movePos(unitLat * step, unitLng * step, 0.0);
         }
       }
@@ -88,6 +110,7 @@ int main() {
       d.drainBattery(1);
       fleet.update(DroneState(d));
     }
+
     int result = fleet.writeTelemetry("backend/telemetry.json");
     if (result != 0) cout << "Failed to write telemetry\n";
     cout << "Tick " << tick++ << " written to telemetry.json" << endl;

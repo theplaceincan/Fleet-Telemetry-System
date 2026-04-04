@@ -3,6 +3,12 @@ import './App.css'
 import { useEffect, useState } from "react";
 import { MapContainer, TileLayer, CircleMarker, Popup } from "react-leaflet";
 
+type Location = {
+  lat: number;
+  lng: number;
+  address: string;
+};
+
 type Drone = {
   id: number;
   position: {
@@ -12,6 +18,8 @@ type Drone = {
   };
   battery: number;
   state: string;
+  base: Location;
+  destination: Location;
   timestamp: number;
 };
 
@@ -65,7 +73,9 @@ export default function App() {
   return (
     <div>
       <h1>Fleet Telemetry Dashboard</h1>
-      <MapContainer center={[36.1699, -115.1398] as [number, number]} zoom={13}   style={{ height: "100vh", width: "100%" }}>
+      {error && <p style={{ color: "red" }}>{error}</p>}
+
+      <MapContainer center={[36.1699, -115.1398] as [number, number]} zoom={13} style={{ height: "100vh", width: "100%" }}>
         <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
 
         {drones.map((drone) => (
@@ -79,7 +89,8 @@ export default function App() {
               <b>Drone #{drone.id}</b><br />
               Battery: {drone.battery}%<br />
               State: {drone.state}<br />
-              Last Updated: {new Date(drone.timestamp).toLocaleTimeString()}
+              Base: {drone.base.address}<br />
+              Destination: {drone.destination.address}<br />
             </Popup>
           </CircleMarker>
         ))}
