@@ -1,24 +1,8 @@
-#ifndef SIM_H
-#define SIM_H
+#ifndef DRONE_H
+#define DRONE_H
 
-int generateUID(void);
-
-enum STATES {
-  OFF,
-  START,
-  TAKEOFF,
-  CRUISE,
-  APPROACH,
-  DELIVERY,
-  RETURNING,
-  LANDED
-};
-
-struct Position {
-  double lat;
-  double lng;
-  double alt;
-};
+#include "../common/types.h"
+#include "../common/id.h"
 
 class Drone {
   private:
@@ -44,7 +28,7 @@ class Drone {
       pos.alt += dAlt;
     }
     void drainBattery(int amount) {
-      battery-amount;
+      battery-=amount;
       if (battery < 0) battery = 0;
     };
     void setState(STATES newState) {state = newState;};

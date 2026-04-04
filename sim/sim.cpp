@@ -1,17 +1,17 @@
-#include "sim.h"
+#include "drone.h"
 #include "backend.h"
+#include "common/id.h"
+
 #include <iostream>
 #include <vector>
+#include <thread>
+#include <chrono>
+
 using std::cout;
 using std::endl;
 using std::vector;
 
 const int NUM_OF_DRONES = 1000;
-
-int generateUID() {
-  static int staticId = 10000;
-  return ++staticId;
-}
 
 int main() {
   DroneList fleet;
@@ -45,5 +45,9 @@ int main() {
       DroneState snapshot(d);
       fleet.update(snapshot);
     }
+    int result = fleet.writeTelemetry("../backend/telemetry.json");
+    if (result != 0) cout << "Failed to write telemetry\n";
+    cout << "Tick " << tick << " written to telemetry.json" << endl;
+    std::this_thread::sleep_for(std::chrono::milliseconds(500));
   }
 }
