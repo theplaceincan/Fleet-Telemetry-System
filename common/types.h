@@ -11,7 +11,8 @@ enum STATES {
   APPROACH,
   DELIVERY,
   RETURNING,
-  LANDED
+  LANDED,
+  CHARGING
 };
 
 struct Position {

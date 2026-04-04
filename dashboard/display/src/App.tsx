@@ -31,6 +31,8 @@ const stateColor = (state: string) => {
     case "APPROACH": return "orange";
     case "RETURNING": return "purple";
     case "OFF": return "gray";
+    case "CHARGING": return "yellow";
+    case "LANDED": return "black";
     default: return "black";
   }
 };
@@ -62,7 +64,7 @@ export default function App() {
     }
 
     fetchData();
-    const interval = setInterval(fetchData, 1000)
+    const interval = setInterval(fetchData, 2000)
     return () => clearInterval(interval);
   }, []);
 

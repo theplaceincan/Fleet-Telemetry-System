@@ -2,7 +2,7 @@
 #define LOCATIONS_H
 
 #include <vector>
-#include "types.h"
+#include "common/types.h"
 
 inline const std::vector<Location> BASES = {
   {36.1699, -115.1398, "Main Launch Base - Downtown Las Vegas"},

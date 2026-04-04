@@ -12,6 +12,7 @@ class Drone {
     STATES state;
     Location destination;
     Location base;
+    double speed;
   public:
     Drone()
     : id(generateUID()),
@@ -23,8 +24,9 @@ class Drone {
       pos{base.lat + latOffset, base.lng + lngOffset, 0.0},
       battery(100),
       state(OFF),
+      destination(destination),
       base(base),
-      destination(destination) {}
+      speed(0.0002) {}
 
     int getId() const { return id; }
     Position getPosition() const { return pos; }
@@ -32,6 +34,11 @@ class Drone {
     STATES getState() const { return state; }
     Location getDestination() const { return destination; };
     Location getBase() const { return base; };
+    double getSpeed() const { return speed; };
+
+    void setSpeed(double newSpeed) {
+      speed = newSpeed;
+    }
 
     void setBase(const Location& newBase) {
       base = newBase;
@@ -57,6 +64,11 @@ class Drone {
       pos.lat = lat;
       pos.lng = lng;
       pos.alt = alt;
+    }
+
+    void chargeBattery(int amount) {
+      battery += amount;
+      if (battery > 100) battery = 100;
     }
 };
 

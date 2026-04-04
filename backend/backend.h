@@ -21,6 +21,7 @@ inline const char* stateToString(STATES state) {
     case DELIVERY: return "DELIVERY";
     case RETURNING: return "RETURNING";
     case LANDED: return "LANDED";
+    case CHARGING: return "CHARGING";
     default: return "UNKNOWN";
   }
 }
@@ -33,6 +34,7 @@ class DroneState {
   STATES state;
   Location destination;
   Location base;
+  double speed;
   std::chrono::system_clock::time_point last_updated;
 
  public:
@@ -41,17 +43,19 @@ class DroneState {
         pos(d.getPosition()),
         battery(d.getBattery()),
         state(d.getState()),
-        base(d.getBase()),
         destination(d.getDestination()),
+        base(d.getBase()),
+        speed(d.getSpeed()),
         last_updated(std::chrono::system_clock::now()) {}
 
-  DroneState(int id, Position pos, int battery, STATES state, Location base, Location destination)
+  DroneState(int id, Position pos, int battery, STATES state, Location base, Location destination, double speed)
       : id(id),
         pos(pos),
         battery(battery),
         state(state),
-        base(base),
         destination(destination),
+        base(base),
+        speed(speed),
         last_updated(std::chrono::system_clock::now()) {}
 
   int getId() const { return id; };
@@ -60,6 +64,7 @@ class DroneState {
   STATES getState() const { return state; };
   Location getDestination() const { return destination; };
   Location getBase() const { return base; };
+  double getSpeed() const { return speed; };
 
   long long getLastUpdated() const {
     return std::chrono::duration_cast<std::chrono::milliseconds>(
@@ -133,7 +138,8 @@ class DroneList {
       file << "        \"lat\": " << drone.getDestination().lat << ",\n";
       file << "        \"lng\": " << drone.getDestination().lng << ",\n";
       file << "        \"address\": \"" << drone.getDestination().addr << "\"\n";
-      file << "      }\n";
+      file << "      },\n";
+      file << "      \"speed\": " << drone.getSpeed() << "\n";
       file << "    }";
 
       first = false;
