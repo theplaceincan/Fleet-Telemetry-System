@@ -32,7 +32,9 @@ int main() {
 
   cout << "\nSimulation Begin\n" << endl;
 
-  for (int tick = 0; tick < 100; tick++) {
+  // for (int tick = 0; tick < 100; tick++) {
+  int tick = 0;
+  while (true) {
     for (auto& d : droneRegistry) {
       d.movePos(0.001, 0.0015, 0.0);
       d.drainBattery(1);
@@ -48,7 +50,7 @@ int main() {
     }
     int result = fleet.writeTelemetry("backend/telemetry.json");
     if (result != 0) cout << "Failed to write telemetry\n";
-    cout << "Tick " << tick << " written to telemetry.json" << endl;
+    cout << "Tick " << tick++ << " written to telemetry.json" << endl;
     std::this_thread::sleep_for(std::chrono::milliseconds(500));
   }
 }

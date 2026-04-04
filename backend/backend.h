@@ -31,33 +31,32 @@ class DroneState {
   Position pos;
   int battery;
   STATES state;
-  std::chrono::steady_clock::time_point last_updated;
+  std::chrono::system_clock::time_point last_updated;
 
  public:
-  // DroneState()
-  // : id(generateUID()),
-  //   pos{0.0, 0.0, 0.0},
-  //   battery(100),
-  //   state(OFF) {}
-
   DroneState(const Drone& d)
       : id(d.getId()),
         pos(d.getPosition()),
         battery(d.getBattery()),
         state(d.getState()),
-        last_updated(std::chrono::steady_clock::now()) {}
+        last_updated(std::chrono::system_clock::now()) {}
 
   DroneState(int id, Position pos, int battery, STATES state)
       : id(id),
         pos(pos),
         battery(battery),
         state(state),
-        last_updated(std::chrono::steady_clock::now()) {}
+        last_updated(std::chrono::system_clock::now()) {}
 
   int getId() const { return id; };
   Position getPosition() const { return pos; };
   int getBattery() const { return battery; };
   STATES getState() const { return state; };
+  long long getLastUpdated() const {
+    return std::chrono::duration_cast<std::chrono::milliseconds>(
+        last_updated.time_since_epoch()
+    ).count();
+  }
 };
 
 class DroneList {
@@ -114,8 +113,8 @@ class DroneList {
       file << "        \"alt\": " << p.alt << "\n";
       file << "      },\n";
       file << "      \"battery\": " << drone.getBattery() << ",\n";
-      file << "      \"state\": \"" << stateToString(drone.getState())
-           << "\"\n";
+      file << "      \"state\": \"" << stateToString(drone.getState()) << "\",\n";
+      file << "      \"timestamp\": " << drone.getLastUpdated() << "\n";
       file << "    }";
 
       first = false;

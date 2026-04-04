@@ -11,6 +11,7 @@ type Drone = {
   };
   battery: number;
   state: string;
+  timestamp: number;
 };
 
 export default function App() {
@@ -58,6 +59,7 @@ export default function App() {
           <p>Altitude: {drone.position.alt}</p>
           <p>Battery: {drone.battery}%</p>
           <p>State: {drone.state}</p>
+          <p>Last Updated: {new Date(drone.timestamp).toLocaleTimeString()}</p>
         </div>
       ))}
     </div>
