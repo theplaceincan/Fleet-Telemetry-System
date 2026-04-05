@@ -1,6 +1,6 @@
 #include "id.h"
 
 int generateUID() {
-  static int staticId = 10000;
+  static int staticId = 100;
   return ++staticId;
 }

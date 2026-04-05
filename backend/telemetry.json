@@ -1,1709 +1,1093 @@
 {
   "drones": [
     {
-      "id": 10100,
+      "id": 200,
       "position": {
-        "lat": 36.1761,
-        "lng": -115.148,
-        "alt": 30
-      },
-      "battery": 70,
-      "state": "CRUISE",
-      "timestamp": 1775349477310,
-      "base": {
-        "lat": 36.1862,
-        "lng": -115.137,
-        "address": "North Las Vegas Warehouse"
-      },
-      "destination": {
-        "lat": 36.054,
-        "lng": -115.277,
-        "address": "8325 E Bonanza Rd, Las Vegas, NV"
-      },
-      "speed": 0.00122158
-    },
-    {
-      "id": 10099,
-      "position": {
-        "lat": 36.1496,
+        "lat": 36.1499,
         "lng": -115.251,
         "alt": 30
       },
-      "battery": 0,
+      "battery": 14,
       "state": "RETURNING",
-      "timestamp": 1775349477310,
+      "timestamp": 1775360951986,
       "base": {
         "lat": 36.15,
         "lng": -115.25,
         "address": "West Side Distribution Hub"
       },
       "destination": {
-        "lat": 36.1117,
-        "lng": -115.303,
-        "address": "8545 E Sunset Rd, Las Vegas, NV"
+        "lat": 36.1704,
+        "lng": -115.141,
+        "address": "7985 W Ann Rd, Las Vegas, NV"
       },
-      "speed": 0.00149067
+      "speed": 0.00119055
     },
     {
-      "id": 10098,
+      "id": 199,
       "position": {
-        "lat": 36.1808,
-        "lng": -115.135,
+        "lat": 36.1217,
+        "lng": -115.165,
         "alt": 30
       },
-      "battery": 80,
+      "battery": 35,
       "state": "CRUISE",
-      "timestamp": 1775349477310,
-      "base": {
-        "lat": 36.1862,
-        "lng": -115.137,
-        "address": "North Las Vegas Warehouse"
-      },
-      "destination": {
-        "lat": 36.0873,
-        "lng": -115.098,
-        "address": "8479 W Charleston Blvd, Las Vegas, NV"
-      },
-      "speed": 0.000831662
-    },
-    {
-      "id": 10097,
-      "position": {
-        "lat": 36.1932,
-        "lng": -115.176,
-        "alt": 30
-      },
-      "battery": 48,
-      "state": "CRUISE",
-      "timestamp": 1775349477310,
-      "base": {
-        "lat": 36.1862,
-        "lng": -115.137,
-        "address": "North Las Vegas Warehouse"
-      },
-      "destination": {
-        "lat": 36.2234,
-        "lng": -115.345,
-        "address": "1349 W Sahara Ave, Las Vegas, NV"
-      },
-      "speed": 0.00172068
-    },
-    {
-      "id": 10096,
-      "position": {
-        "lat": 36.15,
-        "lng": -115.25,
-        "alt": 0
-      },
-      "battery": 100,
-      "state": "CHARGING",
-      "timestamp": 1775349477310,
-      "base": {
-        "lat": 36.15,
-        "lng": -115.25,
-        "address": "West Side Distribution Hub"
-      },
-      "destination": {
-        "lat": 36.1366,
-        "lng": -115.347,
-        "address": "8204 S Rainbow Blvd, Las Vegas, NV"
-      },
-      "speed": 0.00133143
-    },
-    {
-      "id": 10095,
-      "position": {
-        "lat": 36.1139,
-        "lng": -115.173,
-        "alt": 30
-      },
-      "battery": 0,
-      "state": "RETURNING",
-      "timestamp": 1775349477310,
+      "timestamp": 1775360951986,
       "base": {
         "lat": 36.1147,
         "lng": -115.173,
         "address": "South Strip Fulfillment Center"
       },
       "destination": {
-        "lat": 36.2256,
-        "lng": -115.093,
-        "address": "6070 E Sunset Rd, Las Vegas, NV"
+        "lat": 36.1997,
+        "lng": -115.088,
+        "address": "101 W Lake Mead Blvd, Las Vegas, NV"
       },
-      "speed": 0.00147979
+      "speed": 0.00155492
     },
     {
-      "id": 10094,
+      "id": 198,
       "position": {
-        "lat": 36.1685,
-        "lng": -115.16,
+        "lat": 36.0748,
+        "lng": -115.304,
         "alt": 30
       },
-      "battery": 16,
+      "battery": 30,
       "state": "RETURNING",
-      "timestamp": 1775349477310,
-      "base": {
-        "lat": 36.1862,
-        "lng": -115.137,
-        "address": "North Las Vegas Warehouse"
-      },
-      "destination": {
-        "lat": 36.074,
-        "lng": -115.282,
-        "address": "7059 W Cheyenne Ave, Las Vegas, NV"
-      },
-      "speed": 0.000824486
-    },
-    {
-      "id": 10093,
-      "position": {
-        "lat": 36.1208,
-        "lng": -115.17,
-        "alt": 30
-      },
-      "battery": 78,
-      "state": "CRUISE",
-      "timestamp": 1775349477310,
+      "timestamp": 1775360951986,
       "base": {
         "lat": 36.1147,
         "lng": -115.173,
         "address": "South Strip Fulfillment Center"
       },
       "destination": {
-        "lat": 36.2735,
-        "lng": -115.095,
-        "address": "7245 S Nellis Blvd, Las Vegas, NV"
+        "lat": 36.0704,
+        "lng": -115.319,
+        "address": "5888 S Rainbow Blvd, Las Vegas, NV"
       },
-      "speed": 0.000842972
+      "speed": 0.00113939
     },
     {
-      "id": 10092,
+      "id": 197,
       "position": {
-        "lat": 36.1434,
-        "lng": -115.229,
+        "lat": 36.1233,
+        "lng": -115.288,
         "alt": 30
       },
-      "battery": 0,
+      "battery": 36,
       "state": "RETURNING",
-      "timestamp": 1775349477310,
+      "timestamp": 1775360951986,
       "base": {
         "lat": 36.15,
         "lng": -115.25,
         "address": "West Side Distribution Hub"
       },
       "destination": {
-        "lat": 36.0921,
-        "lng": -115.07,
-        "address": "6418 S Decatur Blvd, Las Vegas, NV"
+        "lat": 36.1112,
+        "lng": -115.305,
+        "address": "1359 E Sunset Rd, Las Vegas, NV"
       },
-      "speed": 0.00119707
+      "speed": 0.00154693
     },
     {
-      "id": 10091,
+      "id": 196,
       "position": {
-        "lat": 36.1866,
-        "lng": -115.177,
+        "lat": 36.1408,
+        "lng": -115.249,
         "alt": 30
       },
-      "battery": 10,
-      "state": "RETURNING",
-      "timestamp": 1775349477309,
+      "battery": 23,
+      "state": "CRUISE",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.15,
+        "lng": -115.25,
+        "address": "West Side Distribution Hub"
+      },
+      "destination": {
+        "lat": 36.0719,
+        "lng": -115.237,
+        "address": "5545 W Warm Springs Rd, Las Vegas, NV"
+      },
+      "speed": 0.00152378
+    },
+    {
+      "id": 195,
+      "position": {
+        "lat": 36.2208,
+        "lng": -115.143,
+        "alt": 30
+      },
+      "battery": 41,
+      "state": "CRUISE",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.15,
+        "lng": -115.25,
+        "address": "West Side Distribution Hub"
+      },
+      "destination": {
+        "lat": 36.2793,
+        "lng": -115.056,
+        "address": "6595 W Warm Springs Rd, Las Vegas, NV"
+      },
+      "speed": 0.000859974
+    },
+    {
+      "id": 194,
+      "position": {
+        "lat": 36.2049,
+        "lng": -115.099,
+        "alt": 30
+      },
+      "battery": 56,
+      "state": "CRUISE",
+      "timestamp": 1775360951986,
       "base": {
         "lat": 36.1862,
         "lng": -115.137,
         "address": "North Las Vegas Warehouse"
       },
       "destination": {
-        "lat": 36.187,
-        "lng": -115.23,
-        "address": "3732 W Spring Mountain Rd, Las Vegas, NV"
+        "lat": 36.2142,
+        "lng": -115.08,
+        "address": "6278 E Sunset Rd, Las Vegas, NV"
       },
-      "speed": 0.0012444
+      "speed": 0.000950537
     },
     {
-      "id": 10090,
+      "id": 193,
       "position": {
-        "lat": 36.1144,
-        "lng": -115.173,
+        "lat": 36.0847,
+        "lng": -115.184,
         "alt": 30
       },
-      "battery": 0,
+      "battery": 69,
       "state": "RETURNING",
-      "timestamp": 1775349477309,
+      "timestamp": 1775360951986,
       "base": {
         "lat": 36.1147,
         "lng": -115.173,
         "address": "South Strip Fulfillment Center"
       },
       "destination": {
-        "lat": 36.0899,
-        "lng": -115.233,
-        "address": "1904 S Decatur Blvd, Las Vegas, NV"
+        "lat": 36.0737,
+        "lng": -115.189,
+        "address": "3850 E Flamingo Rd, Las Vegas, NV"
       },
-      "speed": 0.00153728
+      "speed": 0.000960188
     },
     {
-      "id": 10089,
+      "id": 192,
       "position": {
-        "lat": 36.1303,
-        "lng": -115.246,
+        "lat": 36.0876,
+        "lng": -115.141,
         "alt": 30
       },
-      "battery": 50,
-      "state": "CRUISE",
-      "timestamp": 1775349477309,
+      "battery": 56,
+      "state": "RETURNING",
+      "timestamp": 1775360951986,
       "base": {
         "lat": 36.15,
         "lng": -115.25,
         "address": "West Side Distribution Hub"
       },
       "destination": {
-        "lat": 36.0655,
-        "lng": -115.234,
-        "address": "8533 W Lake Mead Blvd, Las Vegas, NV"
+        "lat": 36.0833,
+        "lng": -115.132,
+        "address": "1992 W Sahara Ave, Las Vegas, NV"
       },
-      "speed": 0.000911945
+      "speed": 0.000803865
     },
     {
-      "id": 10088,
+      "id": 191,
       "position": {
-        "lat": 36.1113,
+        "lat": 36.2624,
+        "lng": -115.314,
+        "alt": 30
+      },
+      "battery": 32,
+      "state": "RETURNING",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.1147,
+        "lng": -115.173,
+        "address": "South Strip Fulfillment Center"
+      },
+      "destination": {
+        "lat": 36.2726,
+        "lng": -115.323,
+        "address": "7938 S Pecos Rd, Las Vegas, NV"
+      },
+      "speed": 0.00110457
+    },
+    {
+      "id": 190,
+      "position": {
+        "lat": 36.1556,
+        "lng": -115.247,
+        "alt": 30
+      },
+      "battery": 56,
+      "state": "CRUISE",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.15,
+        "lng": -115.25,
+        "address": "West Side Distribution Hub"
+      },
+      "destination": {
+        "lat": 36.2563,
         "lng": -115.194,
+        "address": "4531 S Maryland Pkwy, Las Vegas, NV"
+      },
+      "speed": 0.0010603
+    },
+    {
+      "id": 189,
+      "position": {
+        "lat": 36.1899,
+        "lng": -115.159,
+        "alt": 30
+      },
+      "battery": 74,
+      "state": "DELIVERY",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.1862,
+        "lng": -115.137,
+        "address": "North Las Vegas Warehouse"
+      },
+      "destination": {
+        "lat": 36.1899,
+        "lng": -115.159,
+        "address": "5592 S Eastern Ave, Las Vegas, NV"
+      },
+      "speed": 0.00105977
+    },
+    {
+      "id": 188,
+      "position": {
+        "lat": 36.183,
+        "lng": -115.15,
+        "alt": 30
+      },
+      "battery": 56,
+      "state": "RETURNING",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.1147,
+        "lng": -115.173,
+        "address": "South Strip Fulfillment Center"
+      },
+      "destination": {
+        "lat": 36.1959,
+        "lng": -115.146,
+        "address": "5356 S Maryland Pkwy, Las Vegas, NV"
+      },
+      "speed": 0.000983808
+    },
+    {
+      "id": 187,
+      "position": {
+        "lat": 36.2048,
+        "lng": -115.184,
+        "alt": 30
+      },
+      "battery": 6,
+      "state": "RETURNING",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.15,
+        "lng": -115.25,
+        "address": "West Side Distribution Hub"
+      },
+      "destination": {
+        "lat": 36.2652,
+        "lng": -115.114,
+        "address": "6722 S Pecos Rd, Las Vegas, NV"
+      },
+      "speed": 0.00175025
+    },
+    {
+      "id": 186,
+      "position": {
+        "lat": 36.1584,
+        "lng": -115.203,
+        "alt": 30
+      },
+      "battery": 43,
+      "state": "RETURNING",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.1862,
+        "lng": -115.137,
+        "address": "North Las Vegas Warehouse"
+      },
+      "destination": {
+        "lat": 36.1518,
+        "lng": -115.216,
+        "address": "7272 E Carey Ave, Las Vegas, NV"
+      },
+      "speed": 0.00117393
+    },
+    {
+      "id": 185,
+      "position": {
+        "lat": 36.12,
+        "lng": -115.182,
+        "alt": 30
+      },
+      "battery": 76,
+      "state": "CRUISE",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.1147,
+        "lng": -115.173,
+        "address": "South Strip Fulfillment Center"
+      },
+      "destination": {
+        "lat": 36.1471,
+        "lng": -115.237,
+        "address": "9369 S Eastern Ave, Las Vegas, NV"
+      },
+      "speed": 0.00179009
+    },
+    {
+      "id": 184,
+      "position": {
+        "lat": 36.0694,
+        "lng": -115.242,
+        "alt": 30
+      },
+      "battery": 26,
+      "state": "RETURNING",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.1862,
+        "lng": -115.137,
+        "address": "North Las Vegas Warehouse"
+      },
+      "destination": {
+        "lat": 36.0581,
+        "lng": -115.251,
+        "address": "9322 S Jones Blvd, Las Vegas, NV"
+      },
+      "speed": 0.00108836
+    },
+    {
+      "id": 183,
+      "position": {
+        "lat": 36.1535,
+        "lng": -115.24,
+        "alt": 30
+      },
+      "battery": 51,
+      "state": "CRUISE",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.15,
+        "lng": -115.25,
+        "address": "West Side Distribution Hub"
+      },
+      "destination": {
+        "lat": 36.1958,
+        "lng": -115.078,
+        "address": "3230 E Desert Inn Rd, Las Vegas, NV"
+      },
+      "speed": 0.00176416
+    },
+    {
+      "id": 182,
+      "position": {
+        "lat": 36.1435,
+        "lng": -115.255,
         "alt": 30
       },
       "battery": 44,
       "state": "CRUISE",
-      "timestamp": 1775349477309,
+      "timestamp": 1775360951986,
       "base": {
-        "lat": 36.1147,
-        "lng": -115.173,
-        "address": "South Strip Fulfillment Center"
+        "lat": 36.15,
+        "lng": -115.25,
+        "address": "West Side Distribution Hub"
       },
       "destination": {
-        "lat": 36.095,
+        "lat": 36.0881,
         "lng": -115.294,
-        "address": "1030 S Rainbow Blvd, Las Vegas, NV"
+        "address": "8391 E Flamingo Rd, Las Vegas, NV"
       },
-      "speed": 0.000859464
+      "speed": 0.00125649
     },
     {
-      "id": 10087,
+      "id": 181,
       "position": {
-        "lat": 36.1046,
-        "lng": -115.157,
+        "lat": 36.173,
+        "lng": -115.294,
         "alt": 30
       },
-      "battery": 54,
-      "state": "CRUISE",
-      "timestamp": 1775349477309,
+      "battery": 56,
+      "state": "RETURNING",
+      "timestamp": 1775360951986,
       "base": {
         "lat": 36.1147,
         "lng": -115.173,
         "address": "South Strip Fulfillment Center"
       },
       "destination": {
-        "lat": 36.0964,
-        "lng": -115.145,
-        "address": "969 W Craig Rd, Las Vegas, NV"
+        "lat": 36.1819,
+        "lng": -115.311,
+        "address": "8130 W Warm Springs Rd, Las Vegas, NV"
       },
-      "speed": 0.000927203
+      "speed": 0.0015603
     },
     {
-      "id": 10086,
+      "id": 180,
       "position": {
-        "lat": 36.15,
-        "lng": -115.25,
-        "alt": 0
-      },
-      "battery": 100,
-      "state": "CHARGING",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.15,
-        "lng": -115.25,
-        "address": "West Side Distribution Hub"
-      },
-      "destination": {
-        "lat": 36.2181,
-        "lng": -115.292,
-        "address": "1241 W Ann Rd, Las Vegas, NV"
-      },
-      "speed": 0.000971319
-    },
-    {
-      "id": 10085,
-      "position": {
-        "lat": 36.1859,
-        "lng": -115.137,
+        "lat": 36.1848,
+        "lng": -115.22,
         "alt": 30
       },
-      "battery": 0,
+      "battery": 19,
       "state": "RETURNING",
-      "timestamp": 1775349477309,
+      "timestamp": 1775360951986,
       "base": {
         "lat": 36.1862,
         "lng": -115.137,
         "address": "North Las Vegas Warehouse"
       },
       "destination": {
-        "lat": 36.2586,
-        "lng": -115.31,
-        "address": "5970 E Owens Ave, Las Vegas, NV"
+        "lat": 36.1845,
+        "lng": -115.23,
+        "address": "7006 S Maryland Pkwy, Las Vegas, NV"
       },
-      "speed": 0.00122688
+      "speed": 0.000840577
     },
     {
-      "id": 10084,
+      "id": 179,
       "position": {
-        "lat": 36.179,
-        "lng": -115.177,
+        "lat": 36.1375,
+        "lng": -115.16,
         "alt": 30
       },
-      "battery": 32,
+      "battery": 67,
       "state": "CRUISE",
-      "timestamp": 1775349477309,
+      "timestamp": 1775360951986,
       "base": {
         "lat": 36.1862,
         "lng": -115.137,
         "address": "North Las Vegas Warehouse"
       },
       "destination": {
-        "lat": 36.1742,
-        "lng": -115.204,
-        "address": "4148 E Tropicana Ave, Las Vegas, NV"
+        "lat": 36.1131,
+        "lng": -115.171,
+        "address": "6790 W Lake Mead Blvd, Las Vegas, NV"
       },
-      "speed": 0.00131101
+      "speed": 0.00105086
     },
     {
-      "id": 10083,
+      "id": 178,
       "position": {
-        "lat": 36.1863,
-        "lng": -115.138,
-        "alt": 30
-      },
-      "battery": 0,
-      "state": "RETURNING",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.1862,
-        "lng": -115.137,
-        "address": "North Las Vegas Warehouse"
-      },
-      "destination": {
-        "lat": 36.1817,
-        "lng": -115.109,
-        "address": "5430 S Rainbow Blvd, Las Vegas, NV"
-      },
-      "speed": 0.001411
-    },
-    {
-      "id": 10082,
-      "position": {
-        "lat": 36.1862,
-        "lng": -115.137,
-        "alt": 25
-      },
-      "battery": 0,
-      "state": "RETURNING",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.1862,
-        "lng": -115.137,
-        "address": "North Las Vegas Warehouse"
-      },
-      "destination": {
-        "lat": 36.233,
-        "lng": -115.074,
-        "address": "6046 W Lake Mead Blvd, Las Vegas, NV"
-      },
-      "speed": 0.00179604
-    },
-    {
-      "id": 10081,
-      "position": {
-        "lat": 36.1494,
-        "lng": -115.25,
-        "alt": 30
-      },
-      "battery": 0,
-      "state": "RETURNING",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.15,
-        "lng": -115.25,
-        "address": "West Side Distribution Hub"
-      },
-      "destination": {
-        "lat": 36.0744,
-        "lng": -115.305,
-        "address": "1028 W Lake Mead Blvd, Las Vegas, NV"
-      },
-      "speed": 0.00158089
-    },
-    {
-      "id": 10080,
-      "position": {
-        "lat": 36.1862,
-        "lng": -115.137,
-        "alt": 30
-      },
-      "battery": 94,
-      "state": "CRUISE",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.1862,
-        "lng": -115.137,
-        "address": "North Las Vegas Warehouse"
-      },
-      "destination": {
-        "lat": 36.2244,
-        "lng": -115.127,
-        "address": "6158 S Rainbow Blvd, Las Vegas, NV"
-      },
-      "speed": 0.00117707
-    },
-    {
-      "id": 10079,
-      "position": {
-        "lat": 36.2163,
-        "lng": -115.168,
-        "alt": 30
-      },
-      "battery": 18,
-      "state": "RETURNING",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.1862,
-        "lng": -115.137,
-        "address": "North Las Vegas Warehouse"
-      },
-      "destination": {
-        "lat": 36.2392,
-        "lng": -115.191,
-        "address": "8169 E Flamingo Rd, Las Vegas, NV"
-      },
-      "speed": 0.00119292
-    },
-    {
-      "id": 10078,
-      "position": {
-        "lat": 36.1483,
-        "lng": -115.245,
-        "alt": 30
-      },
-      "battery": 80,
-      "state": "CRUISE",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.15,
-        "lng": -115.25,
-        "address": "West Side Distribution Hub"
-      },
-      "destination": {
-        "lat": 36.0964,
-        "lng": -115.081,
-        "address": "4806 S Jones Blvd, Las Vegas, NV"
-      },
-      "speed": 0.000824003
-    },
-    {
-      "id": 10077,
-      "position": {
-        "lat": 36.1857,
-        "lng": -115.138,
-        "alt": 30
-      },
-      "battery": 0,
-      "state": "RETURNING",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.1862,
-        "lng": -115.137,
-        "address": "North Las Vegas Warehouse"
-      },
-      "destination": {
-        "lat": 36.2605,
-        "lng": -115.062,
-        "address": "672 W Ann Rd, Las Vegas, NV"
-      },
-      "speed": 0.00151616
-    },
-    {
-      "id": 10076,
-      "position": {
-        "lat": 36.1396,
-        "lng": -115.253,
-        "alt": 30
-      },
-      "battery": 52,
-      "state": "RETURNING",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.15,
-        "lng": -115.25,
-        "address": "West Side Distribution Hub"
-      },
-      "destination": {
-        "lat": 36.1296,
-        "lng": -115.255,
-        "address": "7741 S Eastern Ave, Las Vegas, NV"
-      },
-      "speed": 0.00147871
-    },
-    {
-      "id": 10075,
-      "position": {
-        "lat": 36.1298,
-        "lng": -115.172,
-        "alt": 30
-      },
-      "battery": 66,
-      "state": "CRUISE",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.1147,
-        "lng": -115.173,
-        "address": "South Strip Fulfillment Center"
-      },
-      "destination": {
-        "lat": 36.2569,
-        "lng": -115.168,
-        "address": "2519 W Cheyenne Ave, Las Vegas, NV"
-      },
-      "speed": 0.00107613
-    },
-    {
-      "id": 10074,
-      "position": {
-        "lat": 36.2155,
-        "lng": -115.107,
-        "alt": 30
-      },
-      "battery": 0,
-      "state": "RETURNING",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.1862,
-        "lng": -115.137,
-        "address": "North Las Vegas Warehouse"
-      },
-      "destination": {
-        "lat": 36.2312,
-        "lng": -115.091,
-        "address": "6124 S Maryland Pkwy, Las Vegas, NV"
-      },
-      "speed": 0.00168651
-    },
-    {
-      "id": 10073,
-      "position": {
-        "lat": 36.1575,
+        "lat": 36.1456,
         "lng": -115.254,
         "alt": 30
       },
-      "battery": 0,
+      "battery": 74,
+      "state": "CRUISE",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.15,
+        "lng": -115.25,
+        "address": "West Side Distribution Hub"
+      },
+      "destination": {
+        "lat": 36.1084,
+        "lng": -115.291,
+        "address": "5104 W Lake Mead Blvd, Las Vegas, NV"
+      },
+      "speed": 0.000915352
+    },
+    {
+      "id": 177,
+      "position": {
+        "lat": 36.1535,
+        "lng": -115.084,
+        "alt": 30
+      },
+      "battery": 71,
+      "state": "CRUISE",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.1862,
+        "lng": -115.137,
+        "address": "North Las Vegas Warehouse"
+      },
+      "destination": {
+        "lat": 36.1335,
+        "lng": -115.051,
+        "address": "4518 E Carey Ave, Las Vegas, NV"
+      },
+      "speed": 0.000957042
+    },
+    {
+      "id": 176,
+      "position": {
+        "lat": 36.1121,
+        "lng": -115.179,
+        "alt": 30
+      },
+      "battery": 62,
+      "state": "CRUISE",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.1147,
+        "lng": -115.173,
+        "address": "South Strip Fulfillment Center"
+      },
+      "destination": {
+        "lat": 36.0643,
+        "lng": -115.306,
+        "address": "1417 S Decatur Blvd, Las Vegas, NV"
+      },
+      "speed": 0.00119907
+    },
+    {
+      "id": 175,
+      "position": {
+        "lat": 36.1153,
+        "lng": -115.132,
+        "alt": 30
+      },
+      "battery": 65,
       "state": "RETURNING",
-      "timestamp": 1775349477309,
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.1862,
+        "lng": -115.137,
+        "address": "North Las Vegas Warehouse"
+      },
+      "destination": {
+        "lat": 36.1008,
+        "lng": -115.13,
+        "address": "7649 S Las Vegas Blvd, Las Vegas, NV"
+      },
+      "speed": 0.00117804
+    },
+    {
+      "id": 174,
+      "position": {
+        "lat": 36.1779,
+        "lng": -115.226,
+        "alt": 30
+      },
+      "battery": 20,
+      "state": "CRUISE",
+      "timestamp": 1775360951986,
       "base": {
         "lat": 36.15,
         "lng": -115.25,
         "address": "West Side Distribution Hub"
       },
       "destination": {
-        "lat": 36.2672,
-        "lng": -115.319,
-        "address": "8556 W Warm Springs Rd, Las Vegas, NV"
+        "lat": 36.1858,
+        "lng": -115.22,
+        "address": "9845 W Spring Mountain Rd, Las Vegas, NV"
       },
-      "speed": 0.00144892
+      "speed": 0.00100328
     },
     {
-      "id": 10072,
+      "id": 173,
       "position": {
-        "lat": 36.15,
-        "lng": -115.25,
-        "alt": 0
+        "lat": 36.214,
+        "lng": -115.209,
+        "alt": 30
       },
-      "battery": 100,
-      "state": "TAKEOFF",
-      "timestamp": 1775349477309,
+      "battery": 29,
+      "state": "CRUISE",
+      "timestamp": 1775360951986,
       "base": {
         "lat": 36.15,
         "lng": -115.25,
         "address": "West Side Distribution Hub"
       },
       "destination": {
-        "lat": 36.1608,
-        "lng": -115.159,
-        "address": "998 S Eastern Ave, Las Vegas, NV"
+        "lat": 36.2541,
+        "lng": -115.183,
+        "address": "7236 E Tropicana Ave, Las Vegas, NV"
       },
-      "speed": 0.00132277
+      "speed": 0.00103809
     },
     {
-      "id": 10071,
+      "id": 172,
       "position": {
-        "lat": 36.1791,
-        "lng": -115.258,
+        "lat": 36.2216,
+        "lng": -115.165,
+        "alt": 30
+      },
+      "battery": 49,
+      "state": "CRUISE",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.15,
+        "lng": -115.25,
+        "address": "West Side Distribution Hub"
+      },
+      "destination": {
+        "lat": 36.2746,
+        "lng": -115.103,
+        "address": "5272 E Flamingo Rd, Las Vegas, NV"
+      },
+      "speed": 0.00107966
+    },
+    {
+      "id": 171,
+      "position": {
+        "lat": 36.1552,
+        "lng": -115.249,
+        "alt": 30
+      },
+      "battery": 47,
+      "state": "CRUISE",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.15,
+        "lng": -115.25,
+        "address": "West Side Distribution Hub"
+      },
+      "destination": {
+        "lat": 36.2225,
+        "lng": -115.226,
+        "address": "6496 W Lake Mead Blvd, Las Vegas, NV"
+      },
+      "speed": 0.000874386
+    },
+    {
+      "id": 170,
+      "position": {
+        "lat": 36.1876,
+        "lng": -115.205,
         "alt": 30
       },
       "battery": 18,
       "state": "RETURNING",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.15,
-        "lng": -115.25,
-        "address": "West Side Distribution Hub"
-      },
-      "destination": {
-        "lat": 36.2497,
-        "lng": -115.276,
-        "address": "1657 E Stewart Ave, Las Vegas, NV"
-      },
-      "speed": 0.000835616
-    },
-    {
-      "id": 10070,
-      "position": {
-        "lat": 36.1497,
-        "lng": -115.249,
-        "alt": 30
-      },
-      "battery": 0,
-      "state": "RETURNING",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.15,
-        "lng": -115.25,
-        "address": "West Side Distribution Hub"
-      },
-      "destination": {
-        "lat": 36.09,
-        "lng": -115.119,
-        "address": "9478 W Charleston Blvd, Las Vegas, NV"
-      },
-      "speed": 0.0014764
-    },
-    {
-      "id": 10069,
-      "position": {
-        "lat": 36.1869,
-        "lng": -115.124,
-        "alt": 30
-      },
-      "battery": 0,
-      "state": "RETURNING",
-      "timestamp": 1775349477309,
+      "timestamp": 1775360951986,
       "base": {
         "lat": 36.1862,
         "lng": -115.137,
         "address": "North Las Vegas Warehouse"
       },
       "destination": {
-        "lat": 36.1893,
-        "lng": -115.074,
-        "address": "3686 E Sunset Rd, Las Vegas, NV"
+        "lat": 36.1873,
+        "lng": -115.216,
+        "address": "1089 S Maryland Pkwy, Las Vegas, NV"
       },
-      "speed": 0.00109499
+      "speed": 0.000902255
     },
     {
-      "id": 10068,
+      "id": 169,
       "position": {
-        "lat": 36.1611,
-        "lng": -115.104,
+        "lat": 36.247,
+        "lng": -115.219,
         "alt": 30
       },
-      "battery": 22,
-      "state": "CRUISE",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.1862,
-        "lng": -115.137,
-        "address": "North Las Vegas Warehouse"
-      },
-      "destination": {
-        "lat": 36.1482,
-        "lng": -115.087,
-        "address": "4233 E Tropicana Ave, Las Vegas, NV"
-      },
-      "speed": 0.00115563
-    },
-    {
-      "id": 10067,
-      "position": {
-        "lat": 36.1176,
-        "lng": -115.176,
-        "alt": 30
-      },
-      "battery": 0,
+      "battery": 70,
       "state": "RETURNING",
-      "timestamp": 1775349477309,
+      "timestamp": 1775360951986,
       "base": {
         "lat": 36.1147,
         "lng": -115.173,
         "address": "South Strip Fulfillment Center"
       },
       "destination": {
-        "lat": 36.2585,
-        "lng": -115.345,
-        "address": "7843 S Las Vegas Blvd, Las Vegas, NV"
+        "lat": 36.2663,
+        "lng": -115.225,
+        "address": "5853 E Carey Ave, Las Vegas, NV"
       },
-      "speed": 0.00112127
+      "speed": 0.00149944
     },
     {
-      "id": 10066,
+      "id": 168,
       "position": {
-        "lat": 36.15,
-        "lng": -115.25,
-        "alt": 25
+        "lat": 36.082,
+        "lng": -115.075,
+        "alt": 30
       },
-      "battery": 0,
+      "battery": 49,
       "state": "RETURNING",
-      "timestamp": 1775349477309,
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.1862,
+        "lng": -115.137,
+        "address": "North Las Vegas Warehouse"
+      },
+      "destination": {
+        "lat": 36.0649,
+        "lng": -115.063,
+        "address": "348 W Cheyenne Ave, Las Vegas, NV"
+      },
+      "speed": 0.00161765
+    },
+    {
+      "id": 167,
+      "position": {
+        "lat": 36.1139,
+        "lng": -115.097,
+        "alt": 30
+      },
+      "battery": 64,
+      "state": "RETURNING",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.1862,
+        "lng": -115.137,
+        "address": "North Las Vegas Warehouse"
+      },
+      "destination": {
+        "lat": 36.0946,
+        "lng": -115.086,
+        "address": "6609 W Craig Rd, Las Vegas, NV"
+      },
+      "speed": 0.00169744
+    },
+    {
+      "id": 166,
+      "position": {
+        "lat": 36.1541,
+        "lng": -115.246,
+        "alt": 30
+      },
+      "battery": 42,
+      "state": "CRUISE",
+      "timestamp": 1775360951986,
       "base": {
         "lat": 36.15,
         "lng": -115.25,
         "address": "West Side Distribution Hub"
       },
       "destination": {
-        "lat": 36.1096,
-        "lng": -115.173,
-        "address": "9825 W Warm Springs Rd, Las Vegas, NV"
+        "lat": 36.2407,
+        "lng": -115.179,
+        "address": "728 E Stewart Ave, Las Vegas, NV"
       },
-      "speed": 0.00136583
+      "speed": 0.000941562
     },
     {
-      "id": 10065,
+      "id": 165,
       "position": {
-        "lat": 36.15,
-        "lng": -115.25,
-        "alt": 25
+        "lat": 36.1985,
+        "lng": -115.155,
+        "alt": 30
       },
-      "battery": 0,
+      "battery": 6,
       "state": "RETURNING",
-      "timestamp": 1775349477309,
+      "timestamp": 1775360951986,
       "base": {
-        "lat": 36.15,
-        "lng": -115.25,
-        "address": "West Side Distribution Hub"
+        "lat": 36.1862,
+        "lng": -115.137,
+        "address": "North Las Vegas Warehouse"
       },
       "destination": {
-        "lat": 36.1979,
-        "lng": -115.139,
-        "address": "9115 S Pecos Rd, Las Vegas, NV"
+        "lat": 36.2072,
+        "lng": -115.167,
+        "address": "8348 E Sunset Rd, Las Vegas, NV"
       },
-      "speed": 0.000845226
+      "speed": 0.0011966
     },
     {
-      "id": 10064,
+      "id": 164,
       "position": {
-        "lat": 36.1648,
-        "lng": -115.253,
+        "lat": 36.1362,
+        "lng": -115.155,
         "alt": 30
       },
-      "battery": 66,
+      "battery": 56,
       "state": "CRUISE",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.15,
-        "lng": -115.25,
-        "address": "West Side Distribution Hub"
-      },
-      "destination": {
-        "lat": 36.2777,
-        "lng": -115.278,
-        "address": "5354 S Nellis Blvd, Las Vegas, NV"
-      },
-      "speed": 0.00108493
-    },
-    {
-      "id": 10063,
-      "position": {
-        "lat": 36.1054,
-        "lng": -115.15,
-        "alt": 30
-      },
-      "battery": 40,
-      "state": "CRUISE",
-      "timestamp": 1775349477309,
+      "timestamp": 1775360951986,
       "base": {
         "lat": 36.1147,
         "lng": -115.173,
         "address": "South Strip Fulfillment Center"
       },
       "destination": {
-        "lat": 36.0802,
-        "lng": -115.09,
-        "address": "9636 W Ann Rd, Las Vegas, NV"
+        "lat": 36.1401,
+        "lng": -115.152,
+        "address": "1178 E Owens Ave, Las Vegas, NV"
       },
-      "speed": 0.000895274
+      "speed": 0.000922634
     },
     {
-      "id": 10062,
+      "id": 163,
       "position": {
-        "lat": 36.1439,
-        "lng": -115.169,
+        "lat": 36.1233,
+        "lng": -115.204,
         "alt": 30
       },
-      "battery": 0,
+      "battery": 11,
       "state": "RETURNING",
-      "timestamp": 1775349477309,
+      "timestamp": 1775360951986,
       "base": {
         "lat": 36.1147,
         "lng": -115.173,
         "address": "South Strip Fulfillment Center"
-      },
-      "destination": {
-        "lat": 36.2165,
-        "lng": -115.159,
-        "address": "9807 E Stewart Ave, Las Vegas, NV"
-      },
-      "speed": 0.00173258
-    },
-    {
-      "id": 10061,
-      "position": {
-        "lat": 36.185,
-        "lng": -115.136,
-        "alt": 30
-      },
-      "battery": 92,
-      "state": "CRUISE",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.1862,
-        "lng": -115.137,
-        "address": "North Las Vegas Warehouse"
-      },
-      "destination": {
-        "lat": 36.0901,
-        "lng": -115.062,
-        "address": "4217 E Carey Ave, Las Vegas, NV"
-      },
-      "speed": 0.00147053
-    },
-    {
-      "id": 10060,
-      "position": {
-        "lat": 36.1758,
-        "lng": -115.138,
-        "alt": 30
-      },
-      "battery": 0,
-      "state": "RETURNING",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.1862,
-        "lng": -115.137,
-        "address": "North Las Vegas Warehouse"
-      },
-      "destination": {
-        "lat": 36.0512,
-        "lng": -115.141,
-        "address": "582 E Carey Ave, Las Vegas, NV"
-      },
-      "speed": 0.00104456
-    },
-    {
-      "id": 10029,
-      "position": {
-        "lat": 36.1152,
-        "lng": -115.172,
-        "alt": 30
-      },
-      "battery": 0,
-      "state": "RETURNING",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.1147,
-        "lng": -115.173,
-        "address": "South Strip Fulfillment Center"
-      },
-      "destination": {
-        "lat": 36.2042,
-        "lng": -115.065,
-        "address": "1329 S Jones Blvd, Las Vegas, NV"
-      },
-      "speed": 0.00170539
-    },
-    {
-      "id": 10028,
-      "position": {
-        "lat": 36.1862,
-        "lng": -115.137,
-        "alt": 0
-      },
-      "battery": 40,
-      "state": "CHARGING",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.1862,
-        "lng": -115.137,
-        "address": "North Las Vegas Warehouse"
-      },
-      "destination": {
-        "lat": 36.1494,
-        "lng": -115.098,
-        "address": "3982 E Desert Inn Rd, Las Vegas, NV"
-      },
-      "speed": 0.00129791
-    },
-    {
-      "id": 10027,
-      "position": {
-        "lat": 36.1756,
-        "lng": -115.151,
-        "alt": 30
-      },
-      "battery": 0,
-      "state": "RETURNING",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.1862,
-        "lng": -115.137,
-        "address": "North Las Vegas Warehouse"
       },
       "destination": {
         "lat": 36.1261,
         "lng": -115.215,
         "address": "6726 E Desert Inn Rd, Las Vegas, NV"
       },
-      "speed": 0.00145351
+      "speed": 0.000994907
     },
     {
-      "id": 10026,
+      "id": 162,
       "position": {
-        "lat": 36.1024,
-        "lng": -115.207,
-        "alt": 30
-      },
-      "battery": 22,
-      "state": "CRUISE",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.1147,
-        "lng": -115.173,
-        "address": "South Strip Fulfillment Center"
-      },
-      "destination": {
-        "lat": 36.0575,
-        "lng": -115.333,
-        "address": "4499 W Ann Rd, Las Vegas, NV"
-      },
-      "speed": 0.00101133
-    },
-    {
-      "id": 10025,
-      "position": {
-        "lat": 36.1142,
-        "lng": -115.173,
-        "alt": 30
-      },
-      "battery": 0,
-      "state": "RETURNING",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.1147,
-        "lng": -115.173,
-        "address": "South Strip Fulfillment Center"
-      },
-      "destination": {
-        "lat": 36.278,
-        "lng": -115.104,
-        "address": "6979 S Las Vegas Blvd, Las Vegas, NV"
-      },
-      "speed": 0.00113121
-    },
-    {
-      "id": 10024,
-      "position": {
-        "lat": 36.1147,
-        "lng": -115.173,
-        "alt": 20
-      },
-      "battery": 0,
-      "state": "RETURNING",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.1147,
-        "lng": -115.173,
-        "address": "South Strip Fulfillment Center"
-      },
-      "destination": {
-        "lat": 36.1764,
-        "lng": -115.101,
-        "address": "780 S Nellis Blvd, Las Vegas, NV"
-      },
-      "speed": 0.001683
-    },
-    {
-      "id": 10023,
-      "position": {
-        "lat": 36.127,
-        "lng": -115.167,
-        "alt": 30
-      },
-      "battery": 0,
-      "state": "RETURNING",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.1147,
-        "lng": -115.173,
-        "address": "South Strip Fulfillment Center"
-      },
-      "destination": {
-        "lat": 36.1741,
-        "lng": -115.145,
-        "address": "6196 S Maryland Pkwy, Las Vegas, NV"
-      },
-      "speed": 0.00112935
-    },
-    {
-      "id": 10022,
-      "position": {
-        "lat": 36.1854,
-        "lng": -115.137,
-        "alt": 30
-      },
-      "battery": 0,
-      "state": "RETURNING",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.1862,
-        "lng": -115.137,
-        "address": "North Las Vegas Warehouse"
-      },
-      "destination": {
-        "lat": 36.07,
-        "lng": -115.16,
-        "address": "7385 E Flamingo Rd, Las Vegas, NV"
-      },
-      "speed": 0.00148617
-    },
-    {
-      "id": 10021,
-      "position": {
-        "lat": 36.1495,
-        "lng": -115.25,
-        "alt": 30
-      },
-      "battery": 0,
-      "state": "RETURNING",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.15,
-        "lng": -115.25,
-        "address": "West Side Distribution Hub"
-      },
-      "destination": {
-        "lat": 36.0855,
-        "lng": -115.298,
-        "address": "6414 E Carey Ave, Las Vegas, NV"
-      },
-      "speed": 0.00136344
-    },
-    {
-      "id": 10020,
-      "position": {
-        "lat": 36.1858,
-        "lng": -115.138,
-        "alt": 30
-      },
-      "battery": 0,
-      "state": "RETURNING",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.1862,
-        "lng": -115.137,
-        "address": "North Las Vegas Warehouse"
-      },
-      "destination": {
-        "lat": 36.2342,
-        "lng": -115.056,
-        "address": "8413 S Maryland Pkwy, Las Vegas, NV"
-      },
-      "speed": 0.00165312
-    },
-    {
-      "id": 10019,
-      "position": {
-        "lat": 36.1459,
-        "lng": -115.144,
-        "alt": 30
-      },
-      "battery": 4,
-      "state": "RETURNING",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.1862,
-        "lng": -115.137,
-        "address": "North Las Vegas Warehouse"
-      },
-      "destination": {
-        "lat": 36.087,
-        "lng": -115.155,
-        "address": "3326 W Cheyenne Ave, Las Vegas, NV"
-      },
-      "speed": 0.00141006
-    },
-    {
-      "id": 10018,
-      "position": {
-        "lat": 36.1859,
-        "lng": -115.137,
-        "alt": 30
-      },
-      "battery": 0,
-      "state": "RETURNING",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.1862,
-        "lng": -115.137,
-        "address": "North Las Vegas Warehouse"
-      },
-      "destination": {
-        "lat": 36.2494,
-        "lng": -115.228,
-        "address": "5562 S Las Vegas Blvd, Las Vegas, NV"
-      },
-      "speed": 0.00122171
-    },
-    {
-      "id": 10017,
-      "position": {
-        "lat": 36.109,
-        "lng": -115.144,
-        "alt": 30
-      },
-      "battery": 22,
-      "state": "CRUISE",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.1147,
-        "lng": -115.173,
-        "address": "South Strip Fulfillment Center"
-      },
-      "destination": {
-        "lat": 36.0986,
-        "lng": -115.091,
-        "address": "4072 S Decatur Blvd, Las Vegas, NV"
-      },
-      "speed": 0.000813589
-    },
-    {
-      "id": 10016,
-      "position": {
-        "lat": 36.1685,
-        "lng": -115.131,
-        "alt": 30
-      },
-      "battery": 0,
-      "state": "RETURNING",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.1862,
-        "lng": -115.137,
-        "address": "North Las Vegas Warehouse"
-      },
-      "destination": {
-        "lat": 36.0733,
-        "lng": -115.096,
-        "address": "5357 E Bonanza Rd, Las Vegas, NV"
-      },
-      "speed": 0.00156939
-    },
-    {
-      "id": 10015,
-      "position": {
-        "lat": 36.1147,
-        "lng": -115.173,
-        "alt": 0
-      },
-      "battery": 20,
-      "state": "CHARGING",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.1147,
-        "lng": -115.173,
-        "address": "South Strip Fulfillment Center"
-      },
-      "destination": {
-        "lat": 36.2753,
-        "lng": -115.297,
-        "address": "269 E Sunset Rd, Las Vegas, NV"
-      },
-      "speed": 0.0016651
-    },
-    {
-      "id": 10014,
-      "position": {
-        "lat": 36.1594,
-        "lng": -115.222,
-        "alt": 30
-      },
-      "battery": 58,
-      "state": "CRUISE",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.15,
-        "lng": -115.25,
-        "address": "West Side Distribution Hub"
-      },
-      "destination": {
-        "lat": 36.2132,
-        "lng": -115.065,
-        "address": "411 S Eastern Ave, Las Vegas, NV"
-      },
-      "speed": 0.00161629
-    },
-    {
-      "id": 10001,
-      "position": {
-        "lat": 36.187,
-        "lng": -115.138,
-        "alt": 30
-      },
-      "battery": 0,
-      "state": "RETURNING",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.1862,
-        "lng": -115.137,
-        "address": "North Las Vegas Warehouse"
-      },
-      "destination": {
-        "lat": 36.1311,
-        "lng": -115.103,
-        "address": "5205 S Maryland Pkwy, Las Vegas, NV"
-      },
-      "speed": 0.00144171
-    },
-    {
-      "id": 10002,
-      "position": {
-        "lat": 36.1641,
-        "lng": -115.257,
-        "alt": 30
-      },
-      "battery": 0,
-      "state": "RETURNING",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.15,
-        "lng": -115.25,
-        "address": "West Side Distribution Hub"
-      },
-      "destination": {
-        "lat": 36.21,
-        "lng": -115.281,
-        "address": "1832 S Jones Blvd, Las Vegas, NV"
-      },
-      "speed": 0.000936351
-    },
-    {
-      "id": 10003,
-      "position": {
-        "lat": 36.2104,
-        "lng": -115.148,
-        "alt": 30
-      },
-      "battery": 0,
-      "state": "RETURNING",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.1862,
-        "lng": -115.137,
-        "address": "North Las Vegas Warehouse"
-      },
-      "destination": {
-        "lat": 36.2569,
-        "lng": -115.168,
-        "address": "2519 W Cheyenne Ave, Las Vegas, NV"
-      },
-      "speed": 0.00125509
-    },
-    {
-      "id": 10004,
-      "position": {
-        "lat": 36.1147,
-        "lng": -115.173,
-        "alt": 0
-      },
-      "battery": 0,
-      "state": "LANDED",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.1147,
-        "lng": -115.173,
-        "address": "South Strip Fulfillment Center"
-      },
-      "destination": {
-        "lat": 36.0837,
-        "lng": -115.196,
-        "address": "2408 E Flamingo Rd, Las Vegas, NV"
-      },
-      "speed": 0.00103764
-    },
-    {
-      "id": 10005,
-      "position": {
-        "lat": 36.1575,
-        "lng": -115.216,
-        "alt": 30
-      },
-      "battery": 14,
-      "state": "RETURNING",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.15,
-        "lng": -115.25,
-        "address": "West Side Distribution Hub"
-      },
-      "destination": {
-        "lat": 36.1893,
-        "lng": -115.074,
-        "address": "3686 E Sunset Rd, Las Vegas, NV"
-      },
-      "speed": 0.00101296
-    },
-    {
-      "id": 10006,
-      "position": {
-        "lat": 36.1467,
-        "lng": -115.148,
-        "alt": 30
-      },
-      "battery": 42,
-      "state": "CRUISE",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.1147,
-        "lng": -115.173,
-        "address": "South Strip Fulfillment Center"
-      },
-      "destination": {
-        "lat": 36.2034,
-        "lng": -115.103,
-        "address": "7841 E Flamingo Rd, Las Vegas, NV"
-      },
-      "speed": 0.00156764
-    },
-    {
-      "id": 10007,
-      "position": {
-        "lat": 36.1886,
-        "lng": -115.238,
-        "alt": 30
-      },
-      "battery": 2,
-      "state": "RETURNING",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.15,
-        "lng": -115.25,
-        "address": "West Side Distribution Hub"
-      },
-      "destination": {
-        "lat": 36.2158,
-        "lng": -115.23,
-        "address": "1670 E Sunset Rd, Las Vegas, NV"
-      },
-      "speed": 0.00144512
-    },
-    {
-      "id": 10008,
-      "position": {
-        "lat": 36.1502,
-        "lng": -115.249,
-        "alt": 30
-      },
-      "battery": 0,
-      "state": "RETURNING",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.15,
-        "lng": -115.25,
-        "address": "West Side Distribution Hub"
-      },
-      "destination": {
-        "lat": 36.1682,
-        "lng": -115.174,
-        "address": "391 W Warm Springs Rd, Las Vegas, NV"
-      },
-      "speed": 0.00127671
-    },
-    {
-      "id": 10009,
-      "position": {
-        "lat": 36.1107,
-        "lng": -115.135,
-        "alt": 30
-      },
-      "battery": 6,
-      "state": "RETURNING",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.1147,
-        "lng": -115.173,
-        "address": "South Strip Fulfillment Center"
-      },
-      "destination": {
-        "lat": 36.1068,
-        "lng": -115.098,
-        "address": "3626 W Warm Springs Rd, Las Vegas, NV"
-      },
-      "speed": 0.00125345
-    },
-    {
-      "id": 10010,
-      "position": {
-        "lat": 36.1156,
-        "lng": -115.172,
-        "alt": 30
-      },
-      "battery": 0,
-      "state": "RETURNING",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.1147,
-        "lng": -115.173,
-        "address": "South Strip Fulfillment Center"
-      },
-      "destination": {
-        "lat": 36.2224,
-        "lng": -115.122,
-        "address": "6815 E Desert Inn Rd, Las Vegas, NV"
-      },
-      "speed": 0.00173936
-    },
-    {
-      "id": 10011,
-      "position": {
-        "lat": 36.1861,
-        "lng": -115.138,
-        "alt": 30
-      },
-      "battery": 0,
-      "state": "RETURNING",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.1862,
-        "lng": -115.137,
-        "address": "North Las Vegas Warehouse"
-      },
-      "destination": {
-        "lat": 36.1642,
-        "lng": -115.233,
-        "address": "3046 W Spring Mountain Rd, Las Vegas, NV"
-      },
-      "speed": 0.00104696
-    },
-    {
-      "id": 10012,
-      "position": {
-        "lat": 36.1149,
-        "lng": -115.172,
-        "alt": 30
-      },
-      "battery": 0,
-      "state": "RETURNING",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.1147,
-        "lng": -115.173,
-        "address": "South Strip Fulfillment Center"
-      },
-      "destination": {
-        "lat": 36.1419,
-        "lng": -115.077,
-        "address": "8099 E Flamingo Rd, Las Vegas, NV"
-      },
-      "speed": 0.00134724
-    },
-    {
-      "id": 10013,
-      "position": {
-        "lat": 36.1138,
-        "lng": -115.173,
-        "alt": 30
-      },
-      "battery": 0,
-      "state": "RETURNING",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.1147,
-        "lng": -115.173,
-        "address": "South Strip Fulfillment Center"
-      },
-      "destination": {
-        "lat": 36.2408,
+        "lat": 36.2007,
         "lng": -115.13,
-        "address": "3614 S Pecos Rd, Las Vegas, NV"
-      },
-      "speed": 0.00168455
-    },
-    {
-      "id": 10030,
-      "position": {
-        "lat": 36.1351,
-        "lng": -115.234,
         "alt": 30
       },
-      "battery": 54,
-      "state": "CRUISE",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.15,
-        "lng": -115.25,
-        "address": "West Side Distribution Hub"
-      },
-      "destination": {
-        "lat": 36.1029,
-        "lng": -115.2,
-        "address": "5762 S Decatur Blvd, Las Vegas, NV"
-      },
-      "speed": 0.00108201
-    },
-    {
-      "id": 10031,
-      "position": {
-        "lat": 36.1947,
-        "lng": -115.156,
-        "alt": 30
-      },
-      "battery": 0,
+      "battery": 43,
       "state": "RETURNING",
-      "timestamp": 1775349477309,
+      "timestamp": 1775360951986,
       "base": {
         "lat": 36.1862,
         "lng": -115.137,
         "address": "North Las Vegas Warehouse"
       },
       "destination": {
-        "lat": 36.2412,
-        "lng": -115.258,
-        "address": "8182 E Stewart Ave, Las Vegas, NV"
-      },
-      "speed": 0.00113993
-    },
-    {
-      "id": 10032,
-      "position": {
-        "lat": 36.2261,
+        "lat": 36.217,
         "lng": -115.123,
-        "alt": 30
+        "address": "3840 E Stewart Ave, Las Vegas, NV"
       },
-      "battery": 44,
-      "state": "CRUISE",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.1862,
-        "lng": -115.137,
-        "address": "North Las Vegas Warehouse"
-      },
-      "destination": {
-        "lat": 36.278,
-        "lng": -115.104,
-        "address": "6979 S Las Vegas Blvd, Las Vegas, NV"
-      },
-      "speed": 0.00169623
+      "speed": 0.00133637
     },
     {
-      "id": 10033,
+      "id": 161,
       "position": {
-        "lat": 36.1641,
-        "lng": -115.155,
-        "alt": 30
-      },
-      "battery": 0,
-      "state": "RETURNING",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.1862,
-        "lng": -115.137,
-        "address": "North Las Vegas Warehouse"
-      },
-      "destination": {
-        "lat": 36.0831,
-        "lng": -115.221,
-        "address": "9047 S Pecos Rd, Las Vegas, NV"
-      },
-      "speed": 0.00118412
-    },
-    {
-      "id": 10034,
-      "position": {
-        "lat": 36.1505,
-        "lng": -115.25,
-        "alt": 30
-      },
-      "battery": 0,
-      "state": "RETURNING",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.15,
-        "lng": -115.25,
-        "address": "West Side Distribution Hub"
-      },
-      "destination": {
-        "lat": 36.2353,
-        "lng": -115.333,
-        "address": "8438 S Pecos Rd, Las Vegas, NV"
-      },
-      "speed": 0.00119345
-    },
-    {
-      "id": 10035,
-      "position": {
-        "lat": 36.1681,
-        "lng": -115.163,
-        "alt": 30
-      },
-      "battery": 0,
-      "state": "RETURNING",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.1862,
-        "lng": -115.137,
-        "address": "North Las Vegas Warehouse"
-      },
-      "destination": {
-        "lat": 36.1213,
-        "lng": -115.231,
-        "address": "4325 E Carey Ave, Las Vegas, NV"
-      },
-      "speed": 0.00137676
-    },
-    {
-      "id": 10036,
-      "position": {
-        "lat": 36.1859,
-        "lng": -115.138,
-        "alt": 30
-      },
-      "battery": 0,
-      "state": "RETURNING",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.1862,
-        "lng": -115.137,
-        "address": "North Las Vegas Warehouse"
-      },
-      "destination": {
-        "lat": 36.1095,
-        "lng": -115.292,
-        "address": "932 S Decatur Blvd, Las Vegas, NV"
-      },
-      "speed": 0.001351
-    },
-    {
-      "id": 10037,
-      "position": {
-        "lat": 36.1586,
+        "lat": 36.1544,
         "lng": -115.244,
         "alt": 30
       },
-      "battery": 26,
+      "battery": 30,
+      "state": "CRUISE",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.15,
+        "lng": -115.25,
+        "address": "West Side Distribution Hub"
+      },
+      "destination": {
+        "lat": 36.1976,
+        "lng": -115.179,
+        "address": "5724 S Las Vegas Blvd, Las Vegas, NV"
+      },
+      "speed": 0.00124597
+    },
+    {
+      "id": 160,
+      "position": {
+        "lat": 36.2058,
+        "lng": -115.132,
+        "alt": 30
+      },
+      "battery": 27,
+      "state": "CRUISE",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.15,
+        "lng": -115.25,
+        "address": "West Side Distribution Hub"
+      },
+      "destination": {
+        "lat": 36.2431,
+        "lng": -115.055,
+        "address": "6251 E Owens Ave, Las Vegas, NV"
+      },
+      "speed": 0.00179827
+    },
+    {
+      "id": 129,
+      "position": {
+        "lat": 36.2383,
+        "lng": -115.294,
+        "alt": 30
+      },
+      "battery": 33,
       "state": "RETURNING",
-      "timestamp": 1775349477309,
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.15,
+        "lng": -115.25,
+        "address": "West Side Distribution Hub"
+      },
+      "destination": {
+        "lat": 36.2573,
+        "lng": -115.304,
+        "address": "9901 S Eastern Ave, Las Vegas, NV"
+      },
+      "speed": 0.00157925
+    },
+    {
+      "id": 128,
+      "position": {
+        "lat": 36.1541,
+        "lng": -115.248,
+        "alt": 30
+      },
+      "battery": 20,
+      "state": "RETURNING",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.15,
+        "lng": -115.25,
+        "address": "West Side Distribution Hub"
+      },
+      "destination": {
+        "lat": 36.2285,
+        "lng": -115.228,
+        "address": "6058 S Pecos Rd, Las Vegas, NV"
+      },
+      "speed": 0.000932076
+    },
+    {
+      "id": 127,
+      "position": {
+        "lat": 36.1471,
+        "lng": -115.242,
+        "alt": 30
+      },
+      "battery": 59,
+      "state": "CRUISE",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.15,
+        "lng": -115.25,
+        "address": "West Side Distribution Hub"
+      },
+      "destination": {
+        "lat": 36.1315,
+        "lng": -115.192,
+        "address": "4868 S Eastern Ave, Las Vegas, NV"
+      },
+      "speed": 0.00136653
+    },
+    {
+      "id": 126,
+      "position": {
+        "lat": 36.1232,
+        "lng": -115.176,
+        "alt": 30
+      },
+      "battery": 30,
+      "state": "CRUISE",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.1147,
+        "lng": -115.173,
+        "address": "South Strip Fulfillment Center"
+      },
+      "destination": {
+        "lat": 36.192,
+        "lng": -115.193,
+        "address": "6733 S Decatur Blvd, Las Vegas, NV"
+      },
+      "speed": 0.00151996
+    },
+    {
+      "id": 125,
+      "position": {
+        "lat": 36.1068,
+        "lng": -115.294,
+        "alt": 30
+      },
+      "battery": 8,
+      "state": "RETURNING",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.15,
+        "lng": -115.25,
+        "address": "West Side Distribution Hub"
+      },
+      "destination": {
+        "lat": 36.0649,
+        "lng": -115.337,
+        "address": "3776 E Sunset Rd, Las Vegas, NV"
+      },
+      "speed": 0.00118469
+    },
+    {
+      "id": 124,
+      "position": {
+        "lat": 36.087,
+        "lng": -115.272,
+        "alt": 30
+      },
+      "battery": 41,
+      "state": "CRUISE",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.1147,
+        "lng": -115.173,
+        "address": "South Strip Fulfillment Center"
+      },
+      "destination": {
+        "lat": 36.0661,
+        "lng": -115.347,
+        "address": "621 E Desert Inn Rd, Las Vegas, NV"
+      },
+      "speed": 0.00104754
+    },
+    {
+      "id": 123,
+      "position": {
+        "lat": 36.1108,
+        "lng": -115.132,
+        "alt": 30
+      },
+      "battery": 71,
+      "state": "CRUISE",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.1862,
+        "lng": -115.137,
+        "address": "North Las Vegas Warehouse"
+      },
+      "destination": {
+        "lat": 36.0572,
+        "lng": -115.128,
+        "address": "1152 W Lake Mead Blvd, Las Vegas, NV"
+      },
+      "speed": 0.000894682
+    },
+    {
+      "id": 122,
+      "position": {
+        "lat": 36.1126,
+        "lng": -115.166,
+        "alt": 30
+      },
+      "battery": 43,
+      "state": "CRUISE",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.1147,
+        "lng": -115.173,
+        "address": "South Strip Fulfillment Center"
+      },
+      "destination": {
+        "lat": 36.0935,
+        "lng": -115.086,
+        "address": "9617 S Pecos Rd, Las Vegas, NV"
+      },
+      "speed": 0.00113734
+    },
+    {
+      "id": 121,
+      "position": {
+        "lat": 36.1512,
+        "lng": -115.249,
+        "alt": 30
+      },
+      "battery": 5,
+      "state": "RETURNING",
+      "timestamp": 1775360951986,
       "base": {
         "lat": 36.15,
         "lng": -115.25,
@@ -1714,150 +1098,986 @@
         "lng": -115.236,
         "address": "166 S Jones Blvd, Las Vegas, NV"
       },
-      "speed": 0.00106121
+      "speed": 0.00168192
     },
     {
-      "id": 10038,
+      "id": 120,
       "position": {
-        "lat": 36.1229,
-        "lng": -115.146,
+        "lat": 36.1769,
+        "lng": -115.234,
         "alt": 30
       },
-      "battery": 0,
+      "battery": 62,
       "state": "RETURNING",
-      "timestamp": 1775349477309,
+      "timestamp": 1775360951986,
       "base": {
         "lat": 36.1147,
         "lng": -115.173,
         "address": "South Strip Fulfillment Center"
       },
       "destination": {
-        "lat": 36.1426,
-        "lng": -115.082,
-        "address": "104 S Jones Blvd, Las Vegas, NV"
+        "lat": 36.1878,
+        "lng": -115.244,
+        "address": "4638 S Rainbow Blvd, Las Vegas, NV"
       },
-      "speed": 0.00165097
+      "speed": 0.00116435
     },
     {
-      "id": 10039,
+      "id": 119,
       "position": {
-        "lat": 36.1843,
-        "lng": -115.146,
+        "lat": 36.1428,
+        "lng": -115.252,
         "alt": 30
       },
-      "battery": 0,
+      "battery": 81,
+      "state": "CRUISE",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.15,
+        "lng": -115.25,
+        "address": "West Side Distribution Hub"
+      },
+      "destination": {
+        "lat": 36.0925,
+        "lng": -115.261,
+        "address": "7954 E Flamingo Rd, Las Vegas, NV"
+      },
+      "speed": 0.00121379
+    },
+    {
+      "id": 118,
+      "position": {
+        "lat": 36.1866,
+        "lng": -115.309,
+        "alt": 30
+      },
+      "battery": 49,
+      "state": "CRUISE",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.15,
+        "lng": -115.25,
+        "address": "West Side Distribution Hub"
+      },
+      "destination": {
+        "lat": 36.2078,
+        "lng": -115.345,
+        "address": "3298 W Ann Rd, Las Vegas, NV"
+      },
+      "speed": 0.00110234
+    },
+    {
+      "id": 117,
+      "position": {
+        "lat": 36.1423,
+        "lng": -115.31,
+        "alt": 30
+      },
+      "battery": 20,
+      "state": "CRUISE",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.15,
+        "lng": -115.25,
+        "address": "West Side Distribution Hub"
+      },
+      "destination": {
+        "lat": 36.1366,
+        "lng": -115.347,
+        "address": "8204 S Rainbow Blvd, Las Vegas, NV"
+      },
+      "speed": 0.000890295
+    },
+    {
+      "id": 116,
+      "position": {
+        "lat": 36.1956,
+        "lng": -115.121,
+        "alt": 30
+      },
+      "battery": 38,
       "state": "RETURNING",
-      "timestamp": 1775349477309,
+      "timestamp": 1775360951986,
       "base": {
         "lat": 36.1862,
         "lng": -115.137,
         "address": "North Las Vegas Warehouse"
       },
       "destination": {
-        "lat": 36.1476,
-        "lng": -115.325,
-        "address": "5195 W Charleston Blvd, Las Vegas, NV"
+        "lat": 36.203,
+        "lng": -115.11,
+        "address": "6660 W Warm Springs Rd, Las Vegas, NV"
       },
-      "speed": 0.00116145
+      "speed": 0.00103929
     },
     {
-      "id": 10040,
+      "id": 115,
       "position": {
-        "lat": 36.15,
-        "lng": -115.25,
-        "alt": 15
+        "lat": 36.2026,
+        "lng": -115.194,
+        "alt": 30
       },
-      "battery": 97,
-      "state": "TAKEOFF",
-      "timestamp": 1775349477309,
+      "battery": 7,
+      "state": "RETURNING",
+      "timestamp": 1775360951986,
       "base": {
         "lat": 36.15,
         "lng": -115.25,
         "address": "West Side Distribution Hub"
       },
       "destination": {
-        "lat": 36.0652,
-        "lng": -115.336,
-        "address": "6245 E Owens Ave, Las Vegas, NV"
+        "lat": 36.2534,
+        "lng": -115.14,
+        "address": "1133 E Bonanza Rd, Las Vegas, NV"
       },
-      "speed": 0.00127689
+      "speed": 0.00144097
     },
     {
-      "id": 10041,
+      "id": 114,
       "position": {
-        "lat": 36.1147,
-        "lng": -115.174,
+        "lat": 36.1649,
+        "lng": -115.215,
         "alt": 30
       },
-      "battery": 0,
+      "battery": 7,
       "state": "RETURNING",
-      "timestamp": 1775349477309,
+      "timestamp": 1775360951986,
       "base": {
         "lat": 36.1147,
         "lng": -115.173,
         "address": "South Strip Fulfillment Center"
       },
       "destination": {
-        "lat": 36.1134,
-        "lng": -115.114,
-        "address": "9750 E Tropicana Ave, Las Vegas, NV"
+        "lat": 36.2158,
+        "lng": -115.258,
+        "address": "5471 W Cheyenne Ave, Las Vegas, NV"
       },
-      "speed": 0.00177561
+      "speed": 0.00119755
     },
     {
-      "id": 10042,
+      "id": 101,
       "position": {
-        "lat": 36.1038,
-        "lng": -115.153,
+        "lat": 36.1456,
+        "lng": -115.243,
         "alt": 30
       },
-      "battery": 44,
+      "battery": 31,
       "state": "CRUISE",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.1147,
-        "lng": -115.173,
-        "address": "South Strip Fulfillment Center"
-      },
-      "destination": {
-        "lat": 36.0733,
-        "lng": -115.096,
-        "address": "5357 E Bonanza Rd, Las Vegas, NV"
-      },
-      "speed": 0.000920643
-    },
-    {
-      "id": 10043,
-      "position": {
-        "lat": 36.1568,
-        "lng": -115.23,
-        "alt": 30
-      },
-      "battery": 0,
-      "state": "RETURNING",
-      "timestamp": 1775349477309,
+      "timestamp": 1775360951986,
       "base": {
         "lat": 36.15,
         "lng": -115.25,
         "address": "West Side Distribution Hub"
       },
       "destination": {
-        "lat": 36.2143,
-        "lng": -115.064,
-        "address": "2344 S Eastern Ave, Las Vegas, NV"
+        "lat": 36.0887,
+        "lng": -115.157,
+        "address": "7617 E Bonanza Rd, Las Vegas, NV"
       },
-      "speed": 0.000943695
+      "speed": 0.00132879
     },
     {
-      "id": 10044,
+      "id": 102,
       "position": {
-        "lat": 36.143,
-        "lng": -115.181,
+        "lat": 36.2004,
+        "lng": -115.158,
+        "alt": 30
+      },
+      "battery": 28,
+      "state": "RETURNING",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.1862,
+        "lng": -115.137,
+        "address": "North Las Vegas Warehouse"
+      },
+      "destination": {
+        "lat": 36.2072,
+        "lng": -115.167,
+        "address": "8348 E Sunset Rd, Las Vegas, NV"
+      },
+      "speed": 0.000927022
+    },
+    {
+      "id": 103,
+      "position": {
+        "lat": 36.1671,
+        "lng": -115.237,
+        "alt": 30
+      },
+      "battery": 71,
+      "state": "CRUISE",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.1862,
+        "lng": -115.137,
+        "address": "North Las Vegas Warehouse"
+      },
+      "destination": {
+        "lat": 36.1532,
+        "lng": -115.302,
+        "address": "1883 W Lake Mead Blvd, Las Vegas, NV"
+      },
+      "speed": 0.00130636
+    },
+    {
+      "id": 104,
+      "position": {
+        "lat": 36.1553,
+        "lng": -115.243,
+        "alt": 30
+      },
+      "battery": 71,
+      "state": "CRUISE",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.15,
+        "lng": -115.25,
+        "address": "West Side Distribution Hub"
+      },
+      "destination": {
+        "lat": 36.1857,
+        "lng": -115.206,
+        "address": "4263 S Las Vegas Blvd, Las Vegas, NV"
+      },
+      "speed": 0.00156387
+    },
+    {
+      "id": 105,
+      "position": {
+        "lat": 36.2272,
+        "lng": -115.154,
+        "alt": 30
+      },
+      "battery": 51,
+      "state": "RETURNING",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.1862,
+        "lng": -115.137,
+        "address": "North Las Vegas Warehouse"
+      },
+      "destination": {
+        "lat": 36.2446,
+        "lng": -115.161,
+        "address": "7379 E Desert Inn Rd, Las Vegas, NV"
+      },
+      "speed": 0.00150097
+    },
+    {
+      "id": 106,
+      "position": {
+        "lat": 36.1219,
+        "lng": -115.176,
+        "alt": 30
+      },
+      "battery": 37,
+      "state": "CRUISE",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.1147,
+        "lng": -115.173,
+        "address": "South Strip Fulfillment Center"
+      },
+      "destination": {
+        "lat": 36.2142,
+        "lng": -115.202,
+        "address": "7570 S Pecos Rd, Las Vegas, NV"
+      },
+      "speed": 0.00128356
+    },
+    {
+      "id": 107,
+      "position": {
+        "lat": 36.1529,
+        "lng": -115.256,
+        "alt": 30
+      },
+      "battery": 33,
+      "state": "CRUISE",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.15,
+        "lng": -115.25,
+        "address": "West Side Distribution Hub"
+      },
+      "destination": {
+        "lat": 36.1666,
+        "lng": -115.302,
+        "address": "724 E Carey Ave, Las Vegas, NV"
+      },
+      "speed": 0.00128483
+    },
+    {
+      "id": 108,
+      "position": {
+        "lat": 36.1374,
+        "lng": -115.217,
+        "alt": 30
+      },
+      "battery": 53,
+      "state": "CRUISE",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.1147,
+        "lng": -115.173,
+        "address": "South Strip Fulfillment Center"
+      },
+      "destination": {
+        "lat": 36.1471,
+        "lng": -115.237,
+        "address": "9369 S Eastern Ave, Las Vegas, NV"
+      },
+      "speed": 0.000998894
+    },
+    {
+      "id": 109,
+      "position": {
+        "lat": 36.2079,
+        "lng": -115.107,
+        "alt": 30
+      },
+      "battery": 42,
+      "state": "RETURNING",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.15,
+        "lng": -115.25,
+        "address": "West Side Distribution Hub"
+      },
+      "destination": {
+        "lat": 36.2111,
+        "lng": -115.096,
+        "address": "8577 S Pecos Rd, Las Vegas, NV"
+      },
+      "speed": 0.000823952
+    },
+    {
+      "id": 110,
+      "position": {
+        "lat": 36.0722,
+        "lng": -115.165,
+        "alt": 30
+      },
+      "battery": 28,
+      "state": "RETURNING",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.1862,
+        "lng": -115.137,
+        "address": "North Las Vegas Warehouse"
+      },
+      "destination": {
+        "lat": 36.0503,
+        "lng": -115.171,
+        "address": "6112 S Maryland Pkwy, Las Vegas, NV"
+      },
+      "speed": 0.0017913
+    },
+    {
+      "id": 111,
+      "position": {
+        "lat": 36.1945,
+        "lng": -115.152,
+        "alt": 30
+      },
+      "battery": 9,
+      "state": "RETURNING",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.15,
+        "lng": -115.25,
+        "address": "West Side Distribution Hub"
+      },
+      "destination": {
+        "lat": 36.2356,
+        "lng": -115.061,
+        "address": "9449 S Eastern Ave, Las Vegas, NV"
+      },
+      "speed": 0.00176536
+    },
+    {
+      "id": 112,
+      "position": {
+        "lat": 36.1181,
+        "lng": -115.167,
+        "alt": 30
+      },
+      "battery": 81,
+      "state": "CRUISE",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.1147,
+        "lng": -115.173,
+        "address": "South Strip Fulfillment Center"
+      },
+      "destination": {
+        "lat": 36.1457,
+        "lng": -115.122,
+        "address": "6135 W Warm Springs Rd, Las Vegas, NV"
+      },
+      "speed": 0.000962565
+    },
+    {
+      "id": 113,
+      "position": {
+        "lat": 36.1869,
+        "lng": -115.149,
+        "alt": 30
+      },
+      "battery": 63,
+      "state": "CRUISE",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.1862,
+        "lng": -115.137,
+        "address": "North Las Vegas Warehouse"
+      },
+      "destination": {
+        "lat": 36.1873,
+        "lng": -115.216,
+        "address": "1089 S Maryland Pkwy, Las Vegas, NV"
+      },
+      "speed": 0.00170753
+    },
+    {
+      "id": 130,
+      "position": {
+        "lat": 36.1171,
+        "lng": -115.283,
+        "alt": 30
+      },
+      "battery": 5,
+      "state": "RETURNING",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.1147,
+        "lng": -115.173,
+        "address": "South Strip Fulfillment Center"
+      },
+      "destination": {
+        "lat": 36.1173,
+        "lng": -115.304,
+        "address": "2735 S Eastern Ave, Las Vegas, NV"
+      },
+      "speed": 0.00170182
+    },
+    {
+      "id": 131,
+      "position": {
+        "lat": 36.1595,
+        "lng": -115.085,
         "alt": 30
       },
       "battery": 24,
       "state": "CRUISE",
-      "timestamp": 1775349477309,
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.1862,
+        "lng": -115.137,
+        "address": "North Las Vegas Warehouse"
+      },
+      "destination": {
+        "lat": 36.1461,
+        "lng": -115.06,
+        "address": "5524 S Decatur Blvd, Las Vegas, NV"
+      },
+      "speed": 0.00113363
+    },
+    {
+      "id": 132,
+      "position": {
+        "lat": 36.1547,
+        "lng": -115.187,
+        "alt": 30
+      },
+      "battery": 29,
+      "state": "CRUISE",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.15,
+        "lng": -115.25,
+        "address": "West Side Distribution Hub"
+      },
+      "destination": {
+        "lat": 36.1566,
+        "lng": -115.163,
+        "address": "7503 E Tropicana Ave, Las Vegas, NV"
+      },
+      "speed": 0.00148925
+    },
+    {
+      "id": 133,
+      "position": {
+        "lat": 36.1993,
+        "lng": -115.242,
+        "alt": 30
+      },
+      "battery": 36,
+      "state": "CRUISE",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.15,
+        "lng": -115.25,
+        "address": "West Side Distribution Hub"
+      },
+      "destination": {
+        "lat": 36.2274,
+        "lng": -115.238,
+        "address": "782 E Bonanza Rd, Las Vegas, NV"
+      },
+      "speed": 0.000845704
+    },
+    {
+      "id": 134,
+      "position": {
+        "lat": 36.1534,
+        "lng": -115.242,
+        "alt": 30
+      },
+      "battery": 77,
+      "state": "CRUISE",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.15,
+        "lng": -115.25,
+        "address": "West Side Distribution Hub"
+      },
+      "destination": {
+        "lat": 36.233,
+        "lng": -115.074,
+        "address": "6046 W Lake Mead Blvd, Las Vegas, NV"
+      },
+      "speed": 0.00147121
+    },
+    {
+      "id": 135,
+      "position": {
+        "lat": 36.1562,
+        "lng": -115.247,
+        "alt": 30
+      },
+      "battery": 68,
+      "state": "CRUISE",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.15,
+        "lng": -115.25,
+        "address": "West Side Distribution Hub"
+      },
+      "destination": {
+        "lat": 36.2347,
+        "lng": -115.209,
+        "address": "9835 S Jones Blvd, Las Vegas, NV"
+      },
+      "speed": 0.00118374
+    },
+    {
+      "id": 136,
+      "position": {
+        "lat": 36.1637,
+        "lng": -115.122,
+        "alt": 30
+      },
+      "battery": 41,
+      "state": "RETURNING",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.1862,
+        "lng": -115.137,
+        "address": "North Las Vegas Warehouse"
+      },
+      "destination": {
+        "lat": 36.1554,
+        "lng": -115.116,
+        "address": "9605 S Maryland Pkwy, Las Vegas, NV"
+      },
+      "speed": 0.000839566
+    },
+    {
+      "id": 137,
+      "position": {
+        "lat": 36.1105,
+        "lng": -115.098,
+        "alt": 30
+      },
+      "battery": 73,
+      "state": "RETURNING",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.15,
+        "lng": -115.25,
+        "address": "West Side Distribution Hub"
+      },
+      "destination": {
+        "lat": 36.1056,
+        "lng": -115.077,
+        "address": "8398 E Desert Inn Rd, Las Vegas, NV"
+      },
+      "speed": 0.00168168
+    },
+    {
+      "id": 138,
+      "position": {
+        "lat": 36.1983,
+        "lng": -115.16,
+        "alt": 30
+      },
+      "battery": 50,
+      "state": "RETURNING",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.15,
+        "lng": -115.25,
+        "address": "West Side Distribution Hub"
+      },
+      "destination": {
+        "lat": 36.2038,
+        "lng": -115.15,
+        "address": "5953 E Carey Ave, Las Vegas, NV"
+      },
+      "speed": 0.000834255
+    },
+    {
+      "id": 139,
+      "position": {
+        "lat": 36.2112,
+        "lng": -115.266,
+        "alt": 30
+      },
+      "battery": 30,
+      "state": "CRUISE",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.15,
+        "lng": -115.25,
+        "address": "West Side Distribution Hub"
+      },
+      "destination": {
+        "lat": 36.2497,
+        "lng": -115.276,
+        "address": "1657 E Stewart Ave, Las Vegas, NV"
+      },
+      "speed": 0.000871895
+    },
+    {
+      "id": 140,
+      "position": {
+        "lat": 36.2248,
+        "lng": -115.176,
+        "alt": 30
+      },
+      "battery": 45,
+      "state": "RETURNING",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.1862,
+        "lng": -115.137,
+        "address": "North Las Vegas Warehouse"
+      },
+      "destination": {
+        "lat": 36.2382,
+        "lng": -115.191,
+        "address": "8810 E Desert Inn Rd, Las Vegas, NV"
+      },
+      "speed": 0.00147967
+    },
+    {
+      "id": 141,
+      "position": {
+        "lat": 36.1512,
+        "lng": -115.242,
+        "alt": 30
+      },
+      "battery": 55,
+      "state": "CRUISE",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.15,
+        "lng": -115.25,
+        "address": "West Side Distribution Hub"
+      },
+      "destination": {
+        "lat": 36.1607,
+        "lng": -115.081,
+        "address": "6776 W Charleston Blvd, Las Vegas, NV"
+      },
+      "speed": 0.00154526
+    },
+    {
+      "id": 142,
+      "position": {
+        "lat": 36.2077,
+        "lng": -115.23,
+        "alt": 30
+      },
+      "battery": 57,
+      "state": "CRUISE",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.15,
+        "lng": -115.25,
+        "address": "West Side Distribution Hub"
+      },
+      "destination": {
+        "lat": 36.2425,
+        "lng": -115.219,
+        "address": "9163 E Desert Inn Rd, Las Vegas, NV"
+      },
+      "speed": 0.00100852
+    },
+    {
+      "id": 143,
+      "position": {
+        "lat": 36.1556,
+        "lng": -115.135,
+        "alt": 30
+      },
+      "battery": 54,
+      "state": "RETURNING",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.1147,
+        "lng": -115.173,
+        "address": "South Strip Fulfillment Center"
+      },
+      "destination": {
+        "lat": 36.1639,
+        "lng": -115.128,
+        "address": "5774 S Pecos Rd, Las Vegas, NV"
+      },
+      "speed": 0.000915461
+    },
+    {
+      "id": 144,
+      "position": {
+        "lat": 36.1209,
+        "lng": -115.179,
+        "alt": 30
+      },
+      "battery": 19,
+      "state": "CRUISE",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.1147,
+        "lng": -115.173,
+        "address": "South Strip Fulfillment Center"
+      },
+      "destination": {
+        "lat": 36.2573,
+        "lng": -115.304,
+        "address": "9901 S Eastern Ave, Las Vegas, NV"
+      },
+      "speed": 0.00158699
+    },
+    {
+      "id": 145,
+      "position": {
+        "lat": 36.1176,
+        "lng": -115.167,
+        "alt": 30
+      },
+      "battery": 53,
+      "state": "CRUISE",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.15,
+        "lng": -115.25,
+        "address": "West Side Distribution Hub"
+      },
+      "destination": {
+        "lat": 36.0973,
+        "lng": -115.114,
+        "address": "6076 S Las Vegas Blvd, Las Vegas, NV"
+      },
+      "speed": 0.00121507
+    },
+    {
+      "id": 146,
+      "position": {
+        "lat": 36.1231,
+        "lng": -115.209,
+        "alt": 30
+      },
+      "battery": 16,
+      "state": "RETURNING",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.1147,
+        "lng": -115.173,
+        "address": "South Strip Fulfillment Center"
+      },
+      "destination": {
+        "lat": 36.126,
+        "lng": -115.22,
+        "address": "2611 E Sunset Rd, Las Vegas, NV"
+      },
+      "speed": 0.00164118
+    },
+    {
+      "id": 147,
+      "position": {
+        "lat": 36.1221,
+        "lng": -115.218,
+        "alt": 30
+      },
+      "battery": 52,
+      "state": "RETURNING",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.15,
+        "lng": -115.25,
+        "address": "West Side Distribution Hub"
+      },
+      "destination": {
+        "lat": 36.1117,
+        "lng": -115.204,
+        "address": "3789 W Sahara Ave, Las Vegas, NV"
+      },
+      "speed": 0.00129501
+    },
+    {
+      "id": 148,
+      "position": {
+        "lat": 36.1816,
+        "lng": -115.108,
+        "alt": 30
+      },
+      "battery": 43,
+      "state": "CRUISE",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.1862,
+        "lng": -115.137,
+        "address": "North Las Vegas Warehouse"
+      },
+      "destination": {
+        "lat": 36.1817,
+        "lng": -115.109,
+        "address": "5430 S Rainbow Blvd, Las Vegas, NV"
+      },
+      "speed": 0.00140516
+    },
+    {
+      "id": 149,
+      "position": {
+        "lat": 36.1787,
+        "lng": -115.132,
+        "alt": 30
+      },
+      "battery": 59,
+      "state": "CRUISE",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.1862,
+        "lng": -115.137,
+        "address": "North Las Vegas Warehouse"
+      },
+      "destination": {
+        "lat": 36.147,
+        "lng": -115.111,
+        "address": "7476 E Sunset Rd, Las Vegas, NV"
+      },
+      "speed": 0.00141878
+    },
+    {
+      "id": 150,
+      "position": {
+        "lat": 36.2006,
+        "lng": -115.175,
+        "alt": 30
+      },
+      "battery": 47,
+      "state": "RETURNING",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.1862,
+        "lng": -115.137,
+        "address": "North Las Vegas Warehouse"
+      },
+      "destination": {
+        "lat": 36.2082,
+        "lng": -115.197,
+        "address": "1654 E Stewart Ave, Las Vegas, NV"
+      },
+      "speed": 0.00167073
+    },
+    {
+      "id": 151,
+      "position": {
+        "lat": 36.186,
+        "lng": -115.144,
+        "alt": 30
+      },
+      "battery": 63,
+      "state": "CRUISE",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.1862,
+        "lng": -115.137,
+        "address": "North Las Vegas Warehouse"
+      },
+      "destination": {
+        "lat": 36.1925,
+        "lng": -115.261,
+        "address": "4360 E Owens Ave, Las Vegas, NV"
+      },
+      "speed": 0.00115145
+    },
+    {
+      "id": 152,
+      "position": {
+        "lat": 36.0941,
+        "lng": -115.256,
+        "alt": 30
+      },
+      "battery": 33,
+      "state": "CRUISE",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.15,
+        "lng": -115.25,
+        "address": "West Side Distribution Hub"
+      },
+      "destination": {
+        "lat": 36.0673,
+        "lng": -115.258,
+        "address": "1990 S Eastern Ave, Las Vegas, NV"
+      },
+      "speed": 0.00116055
+    },
+    {
+      "id": 153,
+      "position": {
+        "lat": 36.2163,
+        "lng": -115.174,
+        "alt": 30
+      },
+      "battery": 67,
+      "state": "CRUISE",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.1147,
+        "lng": -115.173,
+        "address": "South Strip Fulfillment Center"
+      },
+      "destination": {
+        "lat": 36.2738,
+        "lng": -115.176,
+        "address": "2616 W Warm Springs Rd, Las Vegas, NV"
+      },
+      "speed": 0.00176184
+    },
+    {
+      "id": 154,
+      "position": {
+        "lat": 36.1784,
+        "lng": -115.144,
+        "alt": 30
+      },
+      "battery": 34,
+      "state": "CRUISE",
+      "timestamp": 1775360951986,
       "base": {
         "lat": 36.1862,
         "lng": -115.137,
@@ -1868,337 +2088,117 @@
         "lng": -115.234,
         "address": "9641 S Nellis Blvd, Las Vegas, NV"
       },
-      "speed": 0.00175675
+      "speed": 0.00170006
     },
     {
-      "id": 10045,
+      "id": 155,
       "position": {
-        "lat": 36.1104,
-        "lng": -115.207,
+        "lat": 36.2576,
+        "lng": -115.127,
         "alt": 30
       },
-      "battery": 0,
+      "battery": 68,
       "state": "RETURNING",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.1147,
-        "lng": -115.173,
-        "address": "South Strip Fulfillment Center"
-      },
-      "destination": {
-        "lat": 36.104,
-        "lng": -115.259,
-        "address": "2970 W Craig Rd, Las Vegas, NV"
-      },
-      "speed": 0.00132898
-    },
-    {
-      "id": 10046,
-      "position": {
-        "lat": 36.1402,
-        "lng": -115.179,
-        "alt": 30
-      },
-      "battery": 44,
-      "state": "CRUISE",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.1147,
-        "lng": -115.173,
-        "address": "South Strip Fulfillment Center"
-      },
-      "destination": {
-        "lat": 36.1965,
-        "lng": -115.192,
-        "address": "4685 E Tropicana Ave, Las Vegas, NV"
-      },
-      "speed": 0.00104956
-    },
-    {
-      "id": 10047,
-      "position": {
-        "lat": 36.1764,
-        "lng": -115.226,
-        "alt": 30
-      },
-      "battery": 20,
-      "state": "CRUISE",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.15,
-        "lng": -115.25,
-        "address": "West Side Distribution Hub"
-      },
-      "destination": {
-        "lat": 36.1992,
-        "lng": -115.206,
-        "address": "5883 E Flamingo Rd, Las Vegas, NV"
-      },
-      "speed": 0.000956974
-    },
-    {
-      "id": 10048,
-      "position": {
-        "lat": 36.1492,
-        "lng": -115.25,
-        "alt": 30
-      },
-      "battery": 0,
-      "state": "RETURNING",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.15,
-        "lng": -115.25,
-        "address": "West Side Distribution Hub"
-      },
-      "destination": {
-        "lat": 36.248,
-        "lng": -115.284,
-        "address": "9748 W Ann Rd, Las Vegas, NV"
-      },
-      "speed": 0.00151846
-    },
-    {
-      "id": 10049,
-      "position": {
-        "lat": 36.1147,
-        "lng": -115.173,
-        "alt": 0
-      },
-      "battery": 0,
-      "state": "RETURNING",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.1147,
-        "lng": -115.173,
-        "address": "South Strip Fulfillment Center"
-      },
-      "destination": {
-        "lat": 36.2635,
-        "lng": -115.147,
-        "address": "5010 W Sahara Ave, Las Vegas, NV"
-      },
-      "speed": 0.00138088
-    },
-    {
-      "id": 10050,
-      "position": {
-        "lat": 36.2013,
-        "lng": -115.143,
-        "alt": 30
-      },
-      "battery": 56,
-      "state": "CRUISE",
-      "timestamp": 1775349477309,
+      "timestamp": 1775360951986,
       "base": {
         "lat": 36.1862,
         "lng": -115.137,
         "address": "North Las Vegas Warehouse"
       },
       "destination": {
-        "lat": 36.2324,
-        "lng": -115.153,
-        "address": "9922 S Decatur Blvd, Las Vegas, NV"
+        "lat": 36.2785,
+        "lng": -115.124,
+        "address": "995 S Nellis Blvd, Las Vegas, NV"
       },
-      "speed": 0.000843902
+      "speed": 0.00165794
     },
     {
-      "id": 10051,
+      "id": 156,
       "position": {
-        "lat": 36.1818,
-        "lng": -115.219,
+        "lat": 36.09,
+        "lng": -115.254,
         "alt": 30
       },
-      "battery": 20,
-      "state": "RETURNING",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.15,
-        "lng": -115.25,
-        "address": "West Side Distribution Hub"
-      },
-      "destination": {
-        "lat": 36.2529,
-        "lng": -115.149,
-        "address": "2655 E Carey Ave, Las Vegas, NV"
-      },
-      "speed": 0.00120637
-    },
-    {
-      "id": 10052,
-      "position": {
-        "lat": 36.1405,
-        "lng": -115.247,
-        "alt": 30
-      },
-      "battery": 0,
-      "state": "RETURNING",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.15,
-        "lng": -115.25,
-        "address": "West Side Distribution Hub"
-      },
-      "destination": {
-        "lat": 36.0889,
-        "lng": -115.233,
-        "address": "3857 W Warm Springs Rd, Las Vegas, NV"
-      },
-      "speed": 0.00123469
-    },
-    {
-      "id": 10053,
-      "position": {
-        "lat": 36.1142,
-        "lng": -115.173,
-        "alt": 30
-      },
-      "battery": 0,
-      "state": "RETURNING",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.1147,
-        "lng": -115.173,
-        "address": "South Strip Fulfillment Center"
-      },
-      "destination": {
-        "lat": 36.0542,
-        "lng": -115.205,
-        "address": "2182 E Bonanza Rd, Las Vegas, NV"
-      },
-      "speed": 0.00111282
-    },
-    {
-      "id": 10054,
-      "position": {
-        "lat": 36.1147,
-        "lng": -115.173,
-        "alt": 0
-      },
-      "battery": 0,
-      "state": "CHARGING",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.1147,
-        "lng": -115.173,
-        "address": "South Strip Fulfillment Center"
-      },
-      "destination": {
-        "lat": 36.1783,
-        "lng": -115.3,
-        "address": "6173 W Spring Mountain Rd, Las Vegas, NV"
-      },
-      "speed": 0.00107633
-    },
-    {
-      "id": 10055,
-      "position": {
-        "lat": 36.1498,
-        "lng": -115.249,
-        "alt": 30
-      },
-      "battery": 0,
-      "state": "RETURNING",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.15,
-        "lng": -115.25,
-        "address": "West Side Distribution Hub"
-      },
-      "destination": {
-        "lat": 36.0926,
-        "lng": -115.075,
-        "address": "4302 E Owens Ave, Las Vegas, NV"
-      },
-      "speed": 0.00135574
-    },
-    {
-      "id": 10056,
-      "position": {
-        "lat": 36.1348,
-        "lng": -115.2,
-        "alt": 30
-      },
-      "battery": 26,
+      "battery": 64,
       "state": "CRUISE",
-      "timestamp": 1775349477309,
+      "timestamp": 1775360951986,
       "base": {
         "lat": 36.1147,
         "lng": -115.173,
         "address": "South Strip Fulfillment Center"
       },
       "destination": {
-        "lat": 36.2247,
-        "lng": -115.32,
-        "address": "8907 W Spring Mountain Rd, Las Vegas, NV"
+        "lat": 36.0744,
+        "lng": -115.305,
+        "address": "1028 W Lake Mead Blvd, Las Vegas, NV"
       },
-      "speed": 0.000989489
+      "speed": 0.00125602
     },
     {
-      "id": 10057,
+      "id": 157,
       "position": {
-        "lat": 36.15,
-        "lng": -115.25,
-        "alt": 0
-      },
-      "battery": 0,
-      "state": "RETURNING",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.15,
-        "lng": -115.25,
-        "address": "West Side Distribution Hub"
-      },
-      "destination": {
-        "lat": 36.2761,
-        "lng": -115.21,
-        "address": "8613 W Charleston Blvd, Las Vegas, NV"
-      },
-      "speed": 0.00155902
-    },
-    {
-      "id": 10058,
-      "position": {
-        "lat": 36.1147,
-        "lng": -115.173,
-        "alt": 0
-      },
-      "battery": 60,
-      "state": "CHARGING",
-      "timestamp": 1775349477309,
-      "base": {
-        "lat": 36.1147,
-        "lng": -115.173,
-        "address": "South Strip Fulfillment Center"
-      },
-      "destination": {
-        "lat": 36.0914,
-        "lng": -115.141,
-        "address": "4175 E Desert Inn Rd, Las Vegas, NV"
-      },
-      "speed": 0.000809643
-    },
-    {
-      "id": 10059,
-      "position": {
-        "lat": 36.1144,
-        "lng": -115.19,
+        "lat": 36.1804,
+        "lng": -115.089,
         "alt": 30
       },
-      "battery": 0,
+      "battery": 14,
       "state": "RETURNING",
-      "timestamp": 1775349477309,
+      "timestamp": 1775360951986,
       "base": {
         "lat": 36.1147,
         "lng": -115.173,
         "address": "South Strip Fulfillment Center"
       },
       "destination": {
-        "lat": 36.1123,
-        "lng": -115.31,
-        "address": "854 S Pecos Rd, Las Vegas, NV"
+        "lat": 36.1865,
+        "lng": -115.081,
+        "address": "5874 W Charleston Blvd, Las Vegas, NV"
       },
-      "speed": 0.00123003
+      "speed": 0.000824893
+    },
+    {
+      "id": 158,
+      "position": {
+        "lat": 36.1757,
+        "lng": -115.075,
+        "alt": 30
+      },
+      "battery": 39,
+      "state": "RETURNING",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.1862,
+        "lng": -115.137,
+        "address": "North Las Vegas Warehouse"
+      },
+      "destination": {
+        "lat": 36.1725,
+        "lng": -115.061,
+        "address": "1183 E Tropicana Ave, Las Vegas, NV"
+      },
+      "speed": 0.00103332
+    },
+    {
+      "id": 159,
+      "position": {
+        "lat": 36.1098,
+        "lng": -115.174,
+        "alt": 30
+      },
+      "battery": 27,
+      "state": "CRUISE",
+      "timestamp": 1775360951986,
+      "base": {
+        "lat": 36.1147,
+        "lng": -115.173,
+        "address": "South Strip Fulfillment Center"
+      },
+      "destination": {
+        "lat": 36.0667,
+        "lng": -115.19,
+        "address": "8837 E Flamingo Rd, Las Vegas, NV"
+      },
+      "speed": 0.000894977
     }
   ]
 }
