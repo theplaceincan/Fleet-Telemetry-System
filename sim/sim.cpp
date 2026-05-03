@@ -25,13 +25,27 @@ using std::vector;
 const int NUM_OF_DRONES = 100;
 const double CRUISE_ALTITUDE = 30.0;
 const int DELIVERY_WAIT_TICKS = 3;
-const int CHARGE_PER_TICK = 10;
-const int LOW_BATTERY_THRESHOLD = 25;
+
+const int CHARGE_PER_TICK = 4;
+const int LOW_BATTERY_THRESHOLD = 20;
+const int BATTERY_DRAIN_INTERVAL = 5;
+const int MOVE_DRAIN = 2;
+const int IDLE_DRAIN = 1;
 
 double distance2D(double lat1, double lng1, double lat2, double lng2) {
   double dLat = lat2 - lat1;
   double dLng = lng2 - lng1;
   return std::sqrt(dLat * dLat + dLng * dLng);
+}
+
+void maybeDrainBattery(Drone& d, int tick, bool isMoving) {
+  if (tick % BATTERY_DRAIN_INTERVAL != 0) return;
+
+  if (isMoving) {
+    d.drainBattery(MOVE_DRAIN);
+  } else {
+    d.drainBattery(IDLE_DRAIN);
+  }
 }
 
 int main() {
@@ -84,7 +98,7 @@ int main() {
       else if (state == TAKEOFF) {
         if (p.alt < CRUISE_ALTITUDE) {
           d.movePos(0.0, 0.0, 5.0);
-          d.drainBattery(1);
+          maybeDrainBattery(d, tick, false);
         } else {
           d.setState(CRUISE);
         }
@@ -109,7 +123,7 @@ int main() {
             double unitLng = dLng / distance;
 
             d.movePos(unitLat * step, unitLng * step, 0.0);
-            d.drainBattery(1);
+            maybeDrainBattery(d, tick, true);
           }
         }
       }
@@ -117,6 +131,7 @@ int main() {
       else if (state == DELIVERY) {
         if (deliveryTicksRemaining[i] > 0) {
           deliveryTicksRemaining[i]--;
+          maybeDrainBattery(d, tick, false);
         } else {
           d.setState(RETURNING);
         }
@@ -133,6 +148,7 @@ int main() {
           if (p.alt > 0.0) {
             double descent = (p.alt >= 5.0) ? -5.0 : -p.alt;
             d.movePos(0.0, 0.0, descent);
+            maybeDrainBattery(d, tick, false);
           } else {
             d.setState(LANDED);
           }
@@ -142,7 +158,7 @@ int main() {
           double unitLng = dLng / distance;
 
           d.movePos(unitLat * step, unitLng * step, 0.0);
-          d.drainBattery(1);
+          maybeDrainBattery(d, tick, true);
         }
       }
 

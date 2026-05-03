@@ -1,7 +1,16 @@
-import './App.css'
+import "./App.css";
+import "leaflet/dist/leaflet.css";
 
-import { useEffect, useState } from "react";
-import { MapContainer, TileLayer, CircleMarker, Popup } from "react-leaflet";
+import { useEffect, useMemo, useState } from "react";
+import {
+  MapContainer,
+  TileLayer,
+  CircleMarker,
+  Popup,
+  Polyline,
+  Tooltip,
+  useMap,
+} from "react-leaflet";
 
 type Location = {
   lat: number;
@@ -23,93 +32,286 @@ type Drone = {
   timestamp: number;
 };
 
-const stateColor = (state: string) => {
-  switch (state) {
+const LOW_BATTERY_THRESHOLD = 25;
+
+const stateColor = (drone: Drone) => {
+  if (drone.battery <= LOW_BATTERY_THRESHOLD) return "#ef4444";
+
+  switch (drone.state) {
     case "CRUISE":
-    case "TAKEOFF": return "blue";
-    case "DELIVERY": return "green";
-    case "APPROACH": return "orange";
-    case "RETURNING": return "purple";
-    case "OFF": return "gray";
-    case "CHARGING": return "yellow";
-    case "LANDED": return "black";
-    default: return "black";
+    case "TAKEOFF":
+    case "APPROACH":
+    case "DELIVERY":
+      return "#2563eb";
+    case "RETURNING":
+      return "#f59e0b";
+    case "CHARGING":
+    case "LANDED":
+    case "OFF":
+      return "#64748b";
+    default:
+      return "#111827";
   }
 };
 
+const normalizeState = (drone: Drone) => {
+  if (drone.battery <= LOW_BATTERY_THRESHOLD) return "LOW_BATTERY";
+
+  if (["CRUISE", "TAKEOFF", "APPROACH", "DELIVERY"].includes(drone.state)) {
+    return "ACTIVE";
+  }
+
+  if (drone.state === "RETURNING") return "RETURNING";
+
+  return "IDLE";
+};
+
+function FocusDrone({ drone }: { drone: Drone | null }) {
+  const map = useMap();
+
+  useEffect(() => {
+    if (!drone) return;
+
+    map.flyTo([drone.position.lat, drone.position.lng], 15, {
+      duration: 0.8,
+    });
+  }, [drone, map]);
+
+  return null;
+}
+
 export default function App() {
   const [drones, setDrones] = useState<Drone[]>([]);
+  const [selectedDrone, setSelectedDrone] = useState<Drone | null>(null);
+  const [filter, setFilter] = useState<string>("ALL");
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
 
   useEffect(() => {
     const fetchData = () => {
-      const controller = new AbortController();
       fetch("http://127.0.0.1:8000/telemetry")
         .then((response) => {
           if (!response.ok) throw new Error(`HTTP ${response.status}`);
           return response.json();
         })
         .then((data) => {
-          setDrones(data.drones);
+          setDrones(data.drones ?? []);
           setLoading(false);
           setError("");
         })
         .catch((err) => {
           console.error("Failed to fetch telemetry:", err);
-          setError("Failed to fetch telemetry");
+          setError("Telemetry API offline");
           setLoading(false);
         });
-      return controller;
-    }
+    };
 
     fetchData();
-    const interval = setInterval(fetchData, 2000)
+    const interval = setInterval(fetchData, 2000);
+
     return () => clearInterval(interval);
   }, []);
 
+  const metrics = useMemo(() => {
+    const total = drones.length;
+    const active = drones.filter((d) => normalizeState(d) === "ACTIVE").length;
+    const returning = drones.filter((d) => normalizeState(d) === "RETURNING").length;
+    const lowBattery = drones.filter((d) => normalizeState(d) === "LOW_BATTERY").length;
+    const idle = drones.filter((d) => normalizeState(d) === "IDLE").length;
+    const avgBattery =
+      total === 0
+        ? 0
+        : Math.round(drones.reduce((sum, d) => sum + d.battery, 0) / total);
 
-  if (loading) { return <p>Loading telemetry...</p>; }
+    return { total, active, returning, lowBattery, idle, avgBattery };
+  }, [drones]);
+
+  const visibleDrones = useMemo(() => {
+    if (filter === "ALL") return drones;
+    return drones.filter((drone) => normalizeState(drone) === filter);
+  }, [drones, filter]);
+
+  if (loading) {
+    return <div className="loading">Loading fleet telemetry...</div>;
+  }
 
   return (
-    <div>
-      <h1>Fleet Telemetry Dashboard</h1>
-      {error && <p style={{ color: "red" }}>{error}</p>}
-
-      <MapContainer center={[36.1699, -115.1398] as [number, number]} zoom={13} style={{ height: "100vh", width: "100%" }}>
-        <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-
-        {drones.map((drone) => (
-          <CircleMarker
-            key={drone.id}
-            center={[drone.position.lat, drone.position.lng] as [number, number]}
-            radius={5}
-            color={stateColor(drone.state)}
-          >
-            <Popup>
-              <b>Drone #{drone.id}</b><br />
-              Battery: {drone.battery}%<br />
-              State: {drone.state}<br />
-              Base: {drone.base.address}<br />
-              Destination: {drone.destination.address}<br />
-            </Popup>
-          </CircleMarker>
-        ))}
-      </MapContainer>
-
-      {/* <h1>Fleet Telemetry Dashboard</h1>
-      {error && <p style={{ color: "red" }}>{error}</p>}
-      {drones.map((drone) => (
-        <div key={drone.id}>
-          <h2>Drone #{drone.id}</h2>
-          <p>Longitude: {drone.position.lng}</p>
-          <p>Latitude: {drone.position.lat}</p>
-          <p>Altitude: {drone.position.alt}</p>
-          <p>Battery: {drone.battery}%</p>
-          <p>State: {drone.state}</p>
-          <p>Last Updated: {new Date(drone.timestamp).toLocaleTimeString()}</p>
+    <div className="dashboard">
+      <aside className="sidebar">
+        <div className="brand">
+          <div className="brand-mark" />
+          <div>
+            <h1>FleetOps</h1>
+            <p>Autonomous Drone Control</p>
+          </div>
         </div>
-      ))} */}
+
+        <div className="status-card critical">
+          <span>Critical Alerts</span>
+          <strong>{metrics.lowBattery}</strong>
+          <p>Low battery drones require attention</p>
+        </div>
+
+        <div className="fleet-groups">
+          <button onClick={() => setFilter("ALL")} className={filter === "ALL" ? "active" : ""}>
+            <span>All Drones</span>
+            <strong>{metrics.total}</strong>
+          </button>
+
+          <button onClick={() => setFilter("ACTIVE")} className={filter === "ACTIVE" ? "active" : ""}>
+            <span>Active</span>
+            <strong>{metrics.active}</strong>
+          </button>
+
+          <button onClick={() => setFilter("RETURNING")} className={filter === "RETURNING" ? "active" : ""}>
+            <span>Returning</span>
+            <strong>{metrics.returning}</strong>
+          </button>
+
+          <button onClick={() => setFilter("LOW_BATTERY")} className={filter === "LOW_BATTERY" ? "active" : ""}>
+            <span>Low Battery</span>
+            <strong>{metrics.lowBattery}</strong>
+          </button>
+
+          <button onClick={() => setFilter("IDLE")} className={filter === "IDLE" ? "active" : ""}>
+            <span>Idle</span>
+            <strong>{metrics.idle}</strong>
+          </button>
+        </div>
+
+        {selectedDrone && (
+          <div className="selected-panel">
+            <p>Selected Drone</p>
+            <h2>Drone #{selectedDrone.id}</h2>
+
+            <div className="detail-row">
+              <span>Status</span>
+              <strong>{selectedDrone.state}</strong>
+            </div>
+
+            <div className="detail-row">
+              <span>Battery</span>
+              <strong>{selectedDrone.battery}%</strong>
+            </div>
+
+            <div className="detail-row">
+              <span>Altitude</span>
+              <strong>{Math.round(selectedDrone.position.alt)} ft</strong>
+            </div>
+
+            <div className="destination">
+              <span>Destination</span>
+              <p>{selectedDrone.destination.address}</p>
+            </div>
+          </div>
+        )}
+      </aside>
+
+      <main className="main">
+        <header className="topbar">
+          <div>
+            <span>Total Drones</span>
+            <strong>{metrics.total}</strong>
+          </div>
+
+          <div>
+            <span>Active</span>
+            <strong>{metrics.active}</strong>
+          </div>
+
+          <div>
+            <span>Avg Battery</span>
+            <strong>{metrics.avgBattery}%</strong>
+          </div>
+
+          <div className={metrics.lowBattery > 0 ? "metric-alert" : ""}>
+            <span>Alerts</span>
+            <strong>{metrics.lowBattery}</strong>
+          </div>
+        </header>
+
+        {metrics.lowBattery > 0 && (
+          <div className="alert-banner">
+            Critical: {metrics.lowBattery} drone{metrics.lowBattery === 1 ? "" : "s"} below{" "}
+            {LOW_BATTERY_THRESHOLD}% battery.
+          </div>
+        )}
+
+        {error && <div className="api-error">{error}</div>}
+
+        <section className="map-shell">
+          <MapContainer
+            center={[36.1699, -115.1398]}
+            zoom={13}
+            className="map"
+          >
+            <FocusDrone drone={selectedDrone} />
+
+            <TileLayer
+              attribution="&copy; OpenStreetMap contributors"
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            />
+
+            {visibleDrones.map((drone) => {
+              const path: [number, number][] = [
+                [drone.base.lat, drone.base.lng],
+                [drone.position.lat, drone.position.lng],
+                [drone.destination.lat, drone.destination.lng],
+              ];
+
+              const selected = selectedDrone?.id === drone.id;
+
+              return (
+                <div key={drone.id}>
+                  {selected && (
+                    <Polyline
+                      positions={path}
+                      color={stateColor(drone)}
+                      weight={4}
+                      opacity={0.9}
+                      dashArray="8 8"
+                    />
+                  )}
+
+                  <CircleMarker
+                    center={[drone.position.lat, drone.position.lng]}
+                    radius={selected ? 9 : 6}
+                    color={stateColor(drone)}
+                    fillColor={stateColor(drone)}
+                    fillOpacity={0.9}
+                    weight={selected ? 3 : 1}
+                    eventHandlers={{
+                      click: () => setSelectedDrone(drone),
+                    }}
+                  >
+                    <Tooltip direction="top" offset={[0, -8]} opacity={1}>
+                      <strong>Drone #{drone.id}</strong>
+                      <br />
+                      Battery: {drone.battery}%
+                      <br />
+                      Status: {drone.state}
+                      <br />
+                      Destination: {drone.destination.address}
+                    </Tooltip>
+
+                    <Popup>
+                      <strong>Drone #{drone.id}</strong>
+                      <br />
+                      Battery: {drone.battery}%
+                      <br />
+                      State: {drone.state}
+                      <br />
+                      Base: {drone.base.address}
+                      <br />
+                      Destination: {drone.destination.address}
+                    </Popup>
+                  </CircleMarker>
+                </div>
+              );
+            })}
+          </MapContainer>
+        </section>
+      </main>
     </div>
   );
 }
